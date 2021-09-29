@@ -1,0 +1,78 @@
+.intro-wrap {
+    background-color: linear-gradient(36deg, rgba(43,46,74,1) 0%, rgba(232,69,69,1) 63%, rgba(144,55,73,1) 90%);
+    border: whitesmoke 1rem double;
+    width: 90%;
+    border-radius: 1rem;
+    height: 90vh;
+}
+
+.Intro {
+    width: 100%;
+    height: 80vh;
+    background-color: whitesmoke;
+    color: black;
+    // opacity: 0.8;
+    // border-radius: 1rem;
+    display: flex;
+    justify-content: space-around;
+
+    .info {
+        opacity: 0.8;
+        width: 60%;
+        height: 100%;
+        padding: 0 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        h2 { font-size: 3rem; }
+        h3 { font-size: 2rem; }
+        h1 {
+            font-size: 4rem;
+            color: rgba(232,69,69,1);
+        }
+    }
+
+    .image {
+        width: 40%;
+        float: right;
+        // padding: 3%;
+        overflow: hidden;
+        img {
+            width: 95%;
+            border-radius: 1rem;
+        }
+    }
+}
+
+.Main-navigation {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    height: 10vh;
+
+    .button {
+        text-align: center;
+        border: 0.2rem whitesmoke solid;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+
+        .span {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+    .button:hover {
+        background-color: whitesmoke;
+        color: black;
+        animation: hoverColor 0.5s ease;
+    }
+
+}
+
+@keyframes hoverColor {
+    from { background-color: transparent; }
+    to {background-color: whitesmoke;}
+}
