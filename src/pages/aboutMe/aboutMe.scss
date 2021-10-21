@@ -1,0 +1,57 @@
+.aboutMe {
+    overflow: hidden;
+    background-color: transparent;
+    padding: 1rem;
+    border: whitesmoke 0.2rem solid;
+    width: 90%;
+    border-radius: 1rem;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(80px, auto);
+    grid-template-areas: 
+    "bio bio bio profile"
+    "bio bio bio profile"
+    "links links links profile"
+    "skill skill languages languages"
+    "skill skill hobbies hobbies";
+
+    .bio {
+        grid-area: bio;
+    }
+    .profile{
+        grid-area: profile;
+        img {
+            width: 100%;
+            border-radius: 100%;
+        }
+    }
+    .links{
+        display: flex;
+        justify-content: space-evenly;
+        grid-area: links;
+        font-size: 2rem;
+
+        a {
+            color: white !important;
+        }
+        i {
+            font-size: 3rem;
+        }
+    }
+    .skills{
+        grid-area: skill;
+        
+        .wordsphere {
+            margin-top: -10%;
+            margin-left: -10%;
+            color: white !important;
+        }
+    }
+    .languages{
+        grid-area: languages;
+    }
+    .hobbies{
+        grid-area: hobbies;
+    }
+}

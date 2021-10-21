@@ -1,0 +1,43 @@
+{
+    "bio": "Current student enrolled in Vellore Institute of Technology pursuing Bachelors in Computer Science and Engineering Program with hands-on experience gained through student- centric, growth-oriented internships. Want to pursue fields like Data Science, Machine Learning, and Computer Vision and develop bleeding-edge technologies.",
+    "links": {
+        "Github": "https://github.com/MeMihir",
+        "LinkedIn": "https://www.linkedin.com/in/mihir-pavuskar-658337139",
+        "Kaggle": "https://www.kaggle.com/mihirpavuskar"
+    },
+    "skills": [
+        "Deep Learning",
+        "Computer Vision",
+        "Data Science",
+        "Data Visualization",
+        "NLP",
+        "Big Data",
+        "",
+        "",
+        "Machine Learning",
+        "Databases",
+        "Node.js",
+        "ReactJS",
+        "Data Structures",
+        "Algorithms",
+        "Tensorflow",
+        "AWS",
+        ""
+    ],
+    "languages": {
+        "English": 9,
+        "Hindi": 7,
+        "Marathi": 7,
+        "Konkani": 7,
+        "French": 5,
+        "Kannada": 3
+    },
+    "hobbies": [
+        "Comedy Sketches",
+        "Stand-up Comedy",
+        "Table Tennies",
+        "Chess",
+        "Reading",
+        "Video Games"
+    ]
+}
