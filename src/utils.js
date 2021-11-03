@@ -17,6 +17,20 @@ export const getLogos = (link) => {
         <i class="lni lni-website"></i>
       </a>
     );
+  else if (link.indexOf("linkedin") !== -1) {
+    return(
+      <a href={link} target="_blank" rel="noreferrer">
+        <i class="lni lni-linkedin-original"></i>
+      </a>
+    )
+  }
+  else if (link.indexOf("kaggle") !== -1) {
+    return(
+      <a href={link} target="_blank" rel="noreferrer">
+        Kaggle
+      </a>
+    )
+  }
   else
     return (
       <a href={link} target="_blank" rel="noreferrer">
