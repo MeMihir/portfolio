@@ -18,20 +18,30 @@ export const getLogos = (link) => {
       </a>
     );
   else if (link.indexOf("linkedin") !== -1) {
-    return(
+    return (
       <a href={link} target="_blank" rel="noreferrer">
         <i class="lni lni-linkedin-original"></i>
       </a>
-    )
-  }
-  else if (link.indexOf("kaggle") !== -1) {
-    return(
+    );
+  } else if (link.indexOf("instagram") !== -1) {
+    return (
+      <a href={link} target="_blank" rel="noreferrer">
+        <i class="lni lni-instagram-original"></i>
+      </a>
+    );
+  } else if (link.indexOf("facebook") !== -1) {
+    return (
+      <a href={link} target="_blank" rel="noreferrer">
+        <i class="lni lni-facebook-original"></i>
+      </a>
+    );
+  } else if (link.indexOf("kaggle") !== -1) {
+    return (
       <a href={link} target="_blank" rel="noreferrer">
         Kaggle
       </a>
-    )
-  }
-  else
+    );
+  } else
     return (
       <a href={link} target="_blank" rel="noreferrer">
         <i class="lni lni-link"></i>

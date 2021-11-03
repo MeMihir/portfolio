@@ -1,0 +1,38 @@
+[
+    {
+        "company" : "Samsung PRISM",
+        "designation" : "Research Intern",
+        "duration": "07/2020 - 03/2021",
+        "tools" : ["Natrual Language Processing", "ASR", "Tensorflow", "XgBoost", "BERT"],
+        "detailed" : "Develop an Intelligent Text Normalization for ASR systems that would be used in SAMSUNG products in the future. Worked with advanced technologies such as BERT networks and XgBoost models. Were able to achieve 99.7% accuracy with the proposed model.",
+        "certificate" : "https://drive.google.com/file/d/1j3iptqVeNHZrhsGVZDNjb5Pp2_muSpoD/view?usp=sharing",
+        "links" : ["https://www.samsungprism.com/", "https://www.linkedin.com/company/samsung-india/"]
+    },
+    {
+        "company" : "CamCann",
+        "designation" : "FrontEnd Intern",
+        "duration": "12/2019 - 05/2020",
+        "tools" : ["ReactJS", "NodeJS", "MongoDB", "CI/CD", "Web Design"],
+        "detailed" : "Developed projects such as Online Education Portal, Smart Advertisement System, and Smart Security Dashboard Led 4 interns",
+        "certificate" : "https://drive.google.com/file/d/12KldH-C76ONLrs4EU1cWZ5RCGHfJY-B1/view?usp=sharing",
+        "links" : ["https://www.camcann.com", "https://www.linkedin.com/company/camcann-tech/", "https://www.instagram.com/camcannsmartsystem/"]
+    },
+    {
+        "company" : "EzStudy",
+        "designation" : "FrontEnd Lead",
+        "duration": "12/2019 - 05/2020",
+        "tools" : ["ReactJS", "NodeJS", "MongoDB", "Web Design"],
+        "detailed" : "Developed projects such as Online Education Portal, Smart Advertisement System, and Smart Security Dashboard Led 4 interns",
+        "certificate" : "https://drive.google.com/file/d/12KldH-C76ONLrs4EU1cWZ5RCGHfJY-B1/view?usp=sharing",
+        "links" : ["https://www.ezstudy.live", "https://www.linkedin.com/company/camcann-tech/", "https://www.instagram.com/ezstudy.live/"]
+    },
+    {
+        "company" : "Vorby",
+        "designation" : "Lead Web Developer",
+        "duration": "10/2019 - 04/2020",
+        "tools" : ["ReactJS", "NodeJS", "MongoDB", "DevOps", "Web Design"],
+        "detailed" : "Developed Student Aid Portal Led 2 Jr. Interns",
+        "certificate" : ["https://drive.google.com/file/d/1tQdCEezA0DrbT-K5v4FZRRHxLyC2qdSn/view?usp=sharing"],
+        "links" : ["https://www.vorby.in/", "https://www.linkedin.com/company/vorby/", "https://instagram.com/vorby_in", "https://www.facebook.com/vorby.in"]
+    }
+]
