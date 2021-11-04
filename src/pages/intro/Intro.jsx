@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import "./intro.scss";
 
 export default function Intro() {
@@ -15,13 +16,13 @@ export default function Intro() {
         </div>
       </div>
 			<div className="Main-navigation" >
-				<div className="button"><span>About Me</span></div>
-				<div className="button"><span>Education</span></div>
-				<div className="button"><span>Internships</span></div>
-				<div className="button"><span>Projects</span></div>
-				<div className="button"><span>Certifications</span></div>
-				<div className="button"><span>Research</span></div>
-				<div className="button"><span>Extra Curricular</span></div>
+				<Link to="/aboutme" className="button" >About Me</Link>
+				<Link to="/education" className="button" >Education</Link>
+				<Link to="/internships" className="button" >Internships</Link>
+				<Link to="/projects" className="button" >Projects</Link>
+				<Link to="/certifications" className="button" >Certifications</Link>
+				<Link to="/research" className="button" >Research</Link>
+				<Link to="/extra" className="button" >Extra Curricular</Link>
 			</div>
     </div>
   );

@@ -5,17 +5,22 @@ import Projects from './pages/projects/Projects';
 import Internships from './pages/internships/Internships';
 import Certifications from './pages/certification/certifications';
 import './App.scss';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
       <Background />
       <header className="App-header">
-        {/* <Intro /> */}
-        {/* <AboutMe  /> */}
-        {/* <Projects /> */}
-        {/* <Internships /> */}
-        <Certifications />
+        <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Intro />} />
+          <Route path="/aboutme" element={<AboutMe />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/internships" element={<Internships />} />
+          <Route path="/certifications" element={<Certifications />} />
+        </Routes>
+        </BrowserRouter>
       </header>
     </div>
   );
