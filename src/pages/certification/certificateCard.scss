@@ -1,0 +1,89 @@
+.certificateCard {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  text-align: left;
+  padding: 0 0.3rem;
+  opacity: 0.6;
+
+  .header {
+    padding: 0 1rem;
+    border-bottom: 0.1rem black solid;
+    .title {
+      font-weight: 500;
+    }
+    .cert-logo {
+      float: right;
+      font-size: 4rem;
+      cursor: pointer;
+      border-radius: 1rem;
+      transition: 0.4s;
+    }
+    .cert-logo:hover {
+      background-color: white;
+      color: black;
+      // font-size: 5.3rem;
+    }
+  }
+
+  .desg {
+    margin-top: -1.5rem;
+    padding: 0 3rem;
+
+    .duration {
+      float: right;
+    }
+  }
+
+  .desc {
+    // max-height: 0rem;
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+    padding: 0 1rem;
+  }
+
+  .certificate {
+    width: 90%;
+    margin: 0 5%;
+    min-height: 50rem;
+    z-index: 2;
+    opacity: 1;
+  }
+
+  .tools {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-size: 1rem;
+
+    li {
+        background-color: black;
+        border-radius: 5px;
+        // border: 1px solid #1a1b38;
+        display: block;
+        text-decoration: none;
+        padding: 10px 15px;
+        font-weight: bold;
+        color: white;
+        margin: 0 0.2rem;
+        border: 0.1rem white solid;
+        cursor: pointer;
+        transition: 0.3s !important;
+
+    }
+
+    li:hover {
+        background-color: white;
+        color: black;
+    }
+  }
+}
+
+// .InternshipCard:hover .details{
+//     max-height: 50rem;
+//     transition: max-height 1s ease-out;
+// }

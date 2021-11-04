@@ -1,0 +1,31 @@
+[
+    {
+        "title" : "Deep Learning Specialization",
+        "by" : "Coursera - Andrew Ng",
+        "description" : "The Deep Learning Specialization is a foundational program that will help you understand the capabilities, challenges, and consequences of deep learning and prepare you to participate in the development of leading-edge AI technology.",
+        "tools" : ["Deep Learning", "Data Science", "TensorFlow", "Computer Vision", "Natural Language Processing"],
+        "link" : "/certificates/DeepLearning.pdf"
+    },
+    {
+        "title" : "AWS - Cloud Practitioner",
+        "by" : "Amazon Web Services",
+        "description" : "This credential helps organizations identify and develop talent with critical knowledge related to implementing cloud initiatives. Earning AWS Certified Cloud Practitioner validates cloud fluency and foundational AWS knowledge.",
+        "tools" : ["AWS", "Cloud Computing"],
+        "link" : "/certificates/AWS_UPLOAD.pdf"
+    },
+    {
+        "title" : "Python Data Visualization",
+        "by" : "Coursera - Rice University",
+        "description" : "This specialization is intended for beginners who would like to master essential data visualization skills",
+        "tools" : ["Data Science", "Data Visualization", "Plotly" ],
+        "link" : "/certificates/DataViz.pdf"
+    },
+    {
+        "title" : "NOS - Security Analyst",
+        "by" : "NASSCOM",
+        "description" : "This specialization is intended for beginners who would like to master essential data visualization skills",
+        "tools" : ["Information Security", "Cyber Security", "Ethical Hacking" ],
+        "link" : "/certificates/NASSCOM.pdf"
+    }
+    
+]

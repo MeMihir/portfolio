@@ -3,6 +3,7 @@ import Intro from './pages/intro/Intro';
 import AboutMe from './pages/aboutMe/aboutMe';
 import Projects from './pages/projects/Projects';
 import Internships from './pages/internships/Internships';
+import Certifications from './pages/certification/certifications';
 import './App.scss';
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
         {/* <Intro /> */}
         {/* <AboutMe  /> */}
         {/* <Projects /> */}
-        <Internships />
+        {/* <Internships /> */}
+        <Certifications />
       </header>
     </div>
   );
