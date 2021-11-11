@@ -3,7 +3,7 @@ import { getLogos } from "../../utils";
 import "./internshipCard.scss";
 
 export default function internshipCard(props) {
-  const { company, designation, duration, tools, detailed, certificate, links } = props.data;
+  const { company, designation, duration, tools, detailed, links } = props.data;
 
   return (
     <div className="InternshipCard">
