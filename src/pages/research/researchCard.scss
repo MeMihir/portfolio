@@ -1,0 +1,87 @@
+.ResearchCard {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    text-align: left;
+    padding: 0 0.3rem;
+    opacity: 0.6;
+  
+    .header {
+      padding: 0 1rem;
+      border-bottom: 0.1rem black solid;
+      .title {
+        font-weight: 500;
+      }
+      .links {
+          float: right;
+          img {
+              height: 2rem;
+              display: inline;
+              margin: 0 0.5rem;
+          }
+          i {
+              color: white;
+              margin: 0 0.5rem;
+              opacity: 1;
+          }
+      }
+    }
+  
+    .desc {
+      padding: 0 1rem;
+    }
+
+    .desg {
+        margin-top: -1.5rem;
+        padding: 0 3rem;
+
+        .duration {
+            float: right;
+        }
+    }    
+  
+    .details {
+      max-height: 0rem;
+      transition: max-height 0.5s ease-out;
+      overflow: hidden;
+      padding: 0 1rem;
+    }
+  
+    .keywords {
+      list-style: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      font-size: 1rem;
+  
+      li {
+          background-color: black;
+          border-radius: 5px;
+          // border: 1px solid #1a1b38;
+          display: block;
+          text-decoration: none;
+          padding: 10px 15px;
+          font-weight: bold;
+          color: white;
+          margin: 0 0.2rem;
+          border: 0.1rem white solid;
+          cursor: pointer;
+          transition: 0.3s !important;
+  
+      }
+  
+      li:hover {
+          background-color: white;
+          color: black;
+      }
+    }
+  }
+  
+  .ResearchCard:hover .details{
+      max-height: 50rem;
+      transition: max-height 1s ease-out;
+  }
+  

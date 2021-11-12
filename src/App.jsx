@@ -4,6 +4,7 @@ import AboutMe from './pages/aboutMe/aboutMe';
 import Projects from './pages/projects/Projects';
 import Internships from './pages/internships/Internships';
 import Certifications from './pages/certification/certifications';
+import Research from './pages/research/research';
 import './App.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/internships" element={<Internships />} />
           <Route path="/certifications" element={<Certifications />} />
+          <Route path="/research" element={<Research />} />
         </Routes>
         </BrowserRouter>
       </header>
