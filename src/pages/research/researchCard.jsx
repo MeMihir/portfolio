@@ -3,7 +3,7 @@ import { getLogos } from "../../utils";
 import "./researchCard.scss";
 
 export default function researchCard(props) {
-  const { title, status, journal, description, keywords, detailed, links } =
+  const { title, status, journal, keywords, detailed, links } =
     props.data;
 
   return (
