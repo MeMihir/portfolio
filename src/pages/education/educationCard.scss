@@ -1,0 +1,53 @@
+.EducationCard {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    text-align: left;
+    padding: 0 0.3rem;
+    opacity: 0.6;
+  
+    .header {
+      padding: 0 1rem;
+      border-bottom: 0.1rem black solid;
+      .title {
+        font-weight: 500;
+      }
+      .links {
+          float: right;
+          img {
+              height: 2rem;
+              display: inline;
+              margin: 0 0.5rem;
+          }
+          i {
+              color: white;
+              margin: 0 0.5rem;
+              opacity: 1;
+          }
+      }
+    }
+  
+
+    .desg {
+        margin-top: -1.5rem;
+        padding: 0 3rem;
+
+        .duration {
+            float: right;
+        }
+    }    
+    
+    .logo {
+      width: 12.5%;
+      float: right;
+      background-color: white;
+      margin-right: 5rem;
+    }
+}
+  
+  .ResearchCard:hover .details{
+      max-height: 50rem;
+      transition: max-height 1s ease-out;
+  }
+  

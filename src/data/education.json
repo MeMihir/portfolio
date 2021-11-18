@@ -1,0 +1,32 @@
+[
+    {
+        "institution": "Vellore Institute of Technology",
+        "level" : "Bacholor's in Computer Science and Engineering",
+        "location": "Vellore, Tamil Nadu, India",
+        "from": "May 2018",
+        "to": "May 2022",
+        "grading": "CGPA",
+        "grade": "9.23",
+        "logo": "vitlogo"
+    },
+    {
+        "institution": "Mushtifund Aryaans",
+        "level" : "High School",
+        "location": "Goa, India",
+        "from": "May 2016",
+        "to": "March 2018",
+        "grading": "Percentage",
+        "grade": "88.6",
+        "logo": "aryaanslogo"
+    },
+    {
+        "institution": "Bhatikar Model High School",
+        "level" : "School",
+        "location": "Goa, India",
+        "from": "June 2006",
+        "to": "March 2016",
+        "grading": "Percentage",
+        "grade": "88.9%",
+        "logo": "bmhslogo"
+    }
+]

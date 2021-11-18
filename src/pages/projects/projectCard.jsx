@@ -12,6 +12,7 @@ export default function projectCard(props) {
         <span className="title">{title}</span>
         <span className="links">{links.map((link) => getLogos(link))}</span>
       </h2>
+      <hr />
       <p className="desc"> {description} </p>
       <p className="details"> {detailed} </p>
       <hr />

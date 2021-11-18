@@ -8,7 +8,7 @@ export const getLogos = (link) => {
   else if (link.indexOf("colab") !== -1)
     return (
       <a href={link} target="_blank" rel="noreferrer">
-        <img src="./colab.png" alt="colab" className="colabImg" />
+        <img src="./logos/colab.png" alt="colab" className="colabImg" />
       </a>
     );
   else if (link.indexOf("netlify") !== -1 || link.indexOf("heroku") !== -1)
