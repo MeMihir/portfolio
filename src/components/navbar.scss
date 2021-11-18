@@ -1,0 +1,49 @@
+.Navbar-hidden {
+    width: 100vw;
+    height: 7.5vh;
+    position: absolute;
+    background-color: black;
+    opacity: 0.1;
+    z-index: 30;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 92.5vh;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.Navbar-hidden:hover {
+    opacity: 0.9;
+}
+
+.Navbar {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 30;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 0;
+    transition: 0.5s;
+
+    i {
+        cursor: pointer;
+    }
+
+    .link {
+        text-decoration: none;
+        color: white;
+        // width: 100%;
+    }
+
+    .link:hover {
+        text-decoration: underline;
+        // border-bottom: 1rem white;
+    }
+}

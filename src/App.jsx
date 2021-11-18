@@ -1,4 +1,5 @@
 import Background from './components/Background';
+import Navbar from './components/Navbar';
 import Intro from './pages/intro/Intro';
 import AboutMe from './pages/aboutMe/aboutMe';
 import Projects from './pages/projects/Projects';
@@ -15,6 +16,7 @@ function App() {
       <Background />
       <header className="App-header">
         <BrowserRouter>
+        <Navbar/>
         <Routes>
           <Route path="/" element={<Intro />} />
           <Route path="/aboutme" element={<AboutMe />} />
