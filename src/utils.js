@@ -41,6 +41,12 @@ export const getLogos = (link) => {
         Kaggle
       </a>
     );
+  } if (link.indexOf("Resume") !== -1) {
+    return (
+      <a href={link} target="_blank" rel="noreferrer">
+        Resume
+      </a>
+    );
   } else
     return (
       <a href={link} target="_blank" rel="noreferrer">

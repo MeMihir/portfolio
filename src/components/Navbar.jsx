@@ -8,33 +8,85 @@ export default function Navbar() {
   if (disp)
     return (
       <div className="Navbar">
-				<NavLink className="link" to="/">
+        <NavLink
+          onClick={() => {
+            setDisp(false);
+          }}
+          className="link"
+          to="/"
+        >
           Home
         </NavLink>
-        <NavLink className="link" to="/aboutme">
+        <NavLink
+          onClick={() => {
+            setDisp(false);
+          }}
+          className="link"
+          to="/aboutme"
+        >
           About Me
         </NavLink>
-        <NavLink className="link" to="/education">
+        <NavLink
+          onClick={() => {
+            setDisp(false);
+          }}
+          className="link"
+          to="/education"
+        >
           Education
         </NavLink>
-        <NavLink className="link" to="/internships">
+        <NavLink
+          onClick={() => {
+            setDisp(false);
+          }}
+          className="link"
+          to="/internships"
+        >
           Internships
         </NavLink>
-        <NavLink className="link" to="/projects">
+        <NavLink
+          onClick={() => {
+            setDisp(false);
+          }}
+          className="link"
+          to="/projects"
+        >
           Projects
         </NavLink>
-        <NavLink className="link" to="/certifications">
+        <NavLink
+          onClick={() => {
+            setDisp(false);
+          }}
+          className="link"
+          to="/certifications"
+        >
           Certifications
         </NavLink>
-        <NavLink className="link" to="/research">
+        <NavLink
+          onClick={() => {
+            setDisp(false);
+          }}
+          className="link"
+          to="/research"
+        >
           Research
         </NavLink>
-        <i class="lni lni-chevron-up" onClick={() => {setDisp(false)}} ></i>
+        <i
+          class="lni lni-chevron-up"
+          onClick={() => {
+            setDisp(false);
+          }}
+        ></i>
       </div>
     );
   else
     return (
-      <div className="Navbar-hidden" onClick={() => {setDisp(true)}} >
+      <div
+        className="Navbar-hidden"
+        onClick={() => {
+          setDisp(true);
+        }}
+      >
         <i class="lni lni-chevron-down"></i>
       </div>
     );

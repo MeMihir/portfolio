@@ -86,7 +86,7 @@ export default function Skills(props) {
         // convert to cartesian and then draw.
         const alpha = 0.6 + 0.4 * (x/radius);
         const size = fontSize + 2 + 5*(x/radius);
-        ctx.fillStyle = `rgba(0,0,0,${alpha})`;
+        ctx.fillStyle = `rgba(255,255,255,${alpha})`;
         ctx.font = `${size}px "Helvetica Neue", sans-serif`;
         ctx.fillText(text, y + width/2, -z + height/2);
 

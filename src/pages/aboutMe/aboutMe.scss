@@ -1,59 +1,100 @@
 .aboutMe {
-    overflow: hidden;
-    z-index: 10;
-    background-color: transparent;
-    padding: 1rem;
-    border: whitesmoke 0.2rem solid;
-    width: 90%;
-    border-radius: 1rem;
-    height: 90vh;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(80px, auto);
-    grid-template-areas: 
-    "bio bio bio profile"
-    "bio bio bio profile"
+  overflow: hidden;
+  z-index: 10;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  padding: 1rem;
+  // border: whitesmoke 0.2rem solid;
+  width: 90%;
+  border-radius: 1rem;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(80px, auto);
+  grid-template-areas:
+    "bio bio bio bio"
+    "bio bio bio bio"
     "links links links profile"
     "skill skill languages languages"
     "skill skill hobbies hobbies";
 
-    .bio {
-        grid-area: bio;
+  h3 {
+    writing-mode: vertical-rl;
+    text-orientation: sideways-left;
+    float: left;
+    margin: 0.5rem 1.25rem;
+  }
+  
+  .bio {
+    grid-area: bio;
+    margin-top: 1rem;
+  }
+  .profile {
+    grid-area: profile;
+    img {
+      width: 100%;
+      border-radius: 100%;
     }
-    .profile{
-        grid-area: profile;
-        img {
-            width: 100%;
-            border-radius: 100%;
-        }
-    }
-    .links{
-        display: flex;
-        justify-content: space-evenly;
-        grid-area: links;
-        font-size: 2rem;
-        z-index: 10;
+  }
+  .links {
+    grid-area: links;
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: links;
+    font-size: 1.5rem;
+    z-index: 10;
+    width: 100%;
 
-        a {
-            color: white !important;
-        }
-        i {
-            font-size: 3rem;
-        }
+    a {
+      color: white !important;
     }
-    .skills{
-        grid-area: skill;
-        
-        .wordsphere {
-            margin-top: -10%;
-            margin-left: -10%;
-            color: white !important;
-        }
+    i {
+      font-size: 3rem;
     }
-    .languages{
-        grid-area: languages;
+  }
+  .skills {
+    grid-area: skill;
+
+    .wordsphere {
+      margin-top: -10%;
+      margin-left: -10%;
+      color: white !important;
     }
-    .hobbies{
-        grid-area: hobbies;
+  }
+  .languages {
+    grid-area: languages;
+  }
+
+  .hobbies {
+    grid-area: hobbies;
+
+    ul {
+      list-style: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      font-size: 1rem;
+
+      li {
+        background-color: rgba($color: #000000, $alpha: 0.2);
+        border-radius: 5px;
+        display: block;
+        text-decoration: none;
+        padding: 10px 15px;
+        font-weight: bold;
+        color: white;
+        margin: 0.2rem 0.2rem;
+        border: 0.1rem white solid;
+        cursor: pointer;
+        transition: 0.3s !important;
+        height: 1.5rem;
+      }
+
+      li:hover {
+        background-color: white;
+        color: black;
+      }
     }
+  }
 }
