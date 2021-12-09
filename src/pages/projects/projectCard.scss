@@ -75,3 +75,19 @@
     max-height: 50rem;
     transition: max-height 1s ease-out;
 }
+
+@media screen and (max-width:414px) {
+  .ProjectCard {
+    .header {
+      font-size: 1.25rem;
+    }
+    .desg {
+      font-size: 1rem;
+      padding: 2.5% 5%;
+    }
+
+    .tools {
+      padding: 0;
+    }
+  }
+}

@@ -83,6 +83,28 @@
   }
 }
 
+
+@media screen and (max-width:414px) {
+  .certificateCard {
+    .header {
+      font-size: 1.25rem;
+
+      .cert-logo {
+        font-size: 3rem;
+      }
+    }
+    .desg {
+      font-size: 1rem;
+      padding: 2.5% 5%;
+    }
+
+    .tools {
+      padding: 0;
+    }
+  }
+}
+
+
 // .InternshipCard:hover .details{
 //     max-height: 50rem;
 //     transition: max-height 1s ease-out;

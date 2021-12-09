@@ -47,3 +47,9 @@
         // border-bottom: 1rem white;
     }
 }
+
+@media screen and (max-width:414px) {
+    .Navbar {
+        font-size: 1.5rem;
+    }
+}

@@ -85,3 +85,25 @@
       transition: max-height 1s ease-out;
   }
   
+  @media screen and (max-width:414px) {
+    .ResearchCard {
+      .header {
+        .title { 
+          font-size: 1.2rem; 
+          width: 60%;
+        }
+        .cert-logo {
+          font-size: 1rem;
+        }
+      }
+      .desg {
+        font-size: 1rem;
+        padding: 2.5% 5%;
+      }
+  
+      .keywords {
+        padding: 0;
+      }
+    }
+  }
+  

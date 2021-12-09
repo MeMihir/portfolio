@@ -76,7 +76,18 @@
   }
 }
 
-// .InternshipCard:hover .details{
-//     max-height: 50rem;
-//     transition: max-height 1s ease-out;
-// }
+@media screen and (max-width:414px) {
+  .InternshipCard {
+    .header {
+      font-size: 1.5rem;
+    }
+    .desg {
+      font-size: 1rem;
+      padding: 2.5% 5%;
+    }
+
+    .tools {
+      padding: 0;
+    }
+  }
+}

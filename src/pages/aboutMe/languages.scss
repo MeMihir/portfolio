@@ -10,3 +10,15 @@
         }
     }
 }
+
+@media screen and (max-width:414px) {
+    .Languages {
+        margin: 3rem auto;
+        writing-mode: horizontal-tb;
+        padding: 0;
+        li {
+
+            width: 100%;
+        }
+    }
+}

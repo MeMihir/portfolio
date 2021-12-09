@@ -98,3 +98,53 @@
     }
   }
 }
+
+@media screen and (max-width:414px) {
+  .aboutMe {
+    overflow-y: scroll;
+    grid-template-areas:
+      "bio bio bio bio"
+      "bio bio bio bio"
+      "bio bio bio bio"
+      "links links links links"
+      "skill skill skill skill"
+      "skill skill skill skill"
+      "skill skill skill skill"
+      "languages languages languages languages"
+      "languages languages languages languages"
+      "languages languages languages languages"
+      "hobbies hobbies hobbies hobbies"
+      "hobbies hobbies hobbies hobbies"
+      "hobbies hobbies hobbies hobbies";
+
+    h3 {
+      writing-mode: horizontal-tb;
+    }
+
+    .links {
+      font-size: 1rem;
+      i {
+        font-size: 2rem;
+      }
+    }
+
+    .skills {
+      .wordsphere {
+        width: 100% !important;
+        height: 100% !important;
+        margin-left: -4rem;
+      }
+    }
+
+    .languages {
+      margin-top: 2rem;
+    }
+
+    .hobbies {
+      ul { 
+        padding: 0;
+        margin-top: 3rem;
+      }
+    }
+  }
+}
