@@ -3,7 +3,7 @@
         "title" : "Master Gesture",
         "description" : "A hand gesture-based mouse control and swipe gesture-based text input system.",
         "tools" : ["OpenCV", "Tensorflow", "XGBoost"],
-        "detailed" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aliquid illo maxime saepe eligendi, nostrum ducimus repudiandae doloribus sed consequatur facere dignissimos, qui quia at possimus tenetur, praesentium officiis explicabo labore. Velit repellendus asperiores provident fugiat magni numquam dolorem quibusdam, blanditiis consectetur dicta nemo quia rerum aperiam possimus explicabo exercitationem.",
+        "detailed" : "",
         "links" : ["https://github.com/MeMihir/MasterGestures"]
     },
     {
@@ -11,7 +11,7 @@
         "description" : "A smart checkout system inspired by the Amazon Go store, coupled with inventory management and a sales prediction system.",
         "tools" : ["LSTM", "ReactJS", "NodeJS", "Docker"],
         "detailed" : "",
-        "links" : ["https://github.com/umangraval/Smart-Checkout","https://smartcheckout.tech/"]
+        "links" : ["https://github.com/umangraval/Smart-Checkout","https://smartcheckout.mihirp.me/"]
     },
     {
         "title" : "COVID Visualizer",
@@ -33,5 +33,12 @@
         "tools" : ["MySQL", "MSSQL", "PostgreSQL", "MongoDB", "NodeJS"],
         "detailed" : "",
         "links" : ["https://github.com/MeMihir/SQL_to_NoSQL"]
+    },
+    {
+        "title": "Automated Vulnerability Assessment and Attack",
+        "description": "An easy to use tool which can be used for passive information gathering, vulnerability assessment and exploitation. An integration of multiple common information and cyber security tools. Can be used to test own website and as an learning tool for newer infosec enthusiasts.",
+        "tools": ["nmap", "wapiti", "nikto", "SQLMap", "metasploit"],
+        "detailed": "",
+        "links": ["https://github.com/MeMihir/AutoVulTack"]
     }
 ]
