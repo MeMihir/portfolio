@@ -14,7 +14,7 @@
 }
 
 .Navbar-hidden:hover {
-    opacity: 0.9;
+    background-color: rgba($color: #000000, $alpha: 0.9);
 }
 
 .Navbar {
@@ -46,6 +46,7 @@
         // border-bottom: 1rem white;
     }
 }
+
 
 @media screen and (max-width:414px) {
     .Navbar {

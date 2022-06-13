@@ -18,7 +18,7 @@ export default function Intro() {
 			<div className="Main-navigation" >
 				<Link to="/aboutme" className="button" >About Me</Link>
 				<Link to="/education" className="button" >Education</Link>
-				<Link to="/internships" className="button" >Internships</Link>
+				<Link to="/experience" className="button" >Experience</Link>
 				<Link to="/projects" className="button" >Projects</Link>
 				<Link to="/certifications" className="button" >Certifications</Link>
 				<Link to="/research" className="button" >Research</Link>

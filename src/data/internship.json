@@ -1,5 +1,23 @@
 [
     {
+        "company" : "Deakin University",
+        "designation" : "Visiting Researcher",
+        "duration": "02/2022 - Present",
+        "tools" : ["Artificial Intelligence (AI)", "Deep Learning", "Research", "TensorFlow", "PyTorch", "Data Science", "Machine Learning", "Natural Language Processing (NLP)", "Python"],
+        "detailed" : "Part of final year capstone internship. Working on an End-to-End Financial Document Question-Answering Model under Dr Chetan Arora, Deakin University and Dr Boominathan P, . Aiming for journal publication.",
+        "certificate" : "",
+        "links" : ["https://www.deakin.edu.au/", "https://www.linkedin.com/school/deakin-university/"]
+    },
+    {
+        "company" : "Velozity Global Solutions India Pvt. Ltd.",
+        "designation" : "Full-Stack Developer",
+        "duration": "01/2022 - 04/2022",
+        "tools" : ["NodeJS", "ReactJS", "NextJS", "NESTJS", "ChakraUI"],
+        "detailed" : "Worked on both frontend and backend development of several projects. Collaborated with over seven other while working on the projects. Worked with several technologies like ReactJS, NodeJS, NextJS, NestJS, ChakraUI, ReactStrap, etc. Developed ECG monitoring interface, Business landing websites and demonstration webapps.",
+        "certificate" : "",
+        "links" : ["https://velozityglobal.com/", "https://www.linkedin.com/company/velozity-global-solutions/", "https://www.instagram.com/velozityglobalsolutions/"]
+    },
+    {
         "company" : "Samsung PRISM",
         "designation" : "Research Intern",
         "duration": "07/2020 - 03/2021",

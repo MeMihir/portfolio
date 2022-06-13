@@ -40,9 +40,9 @@ export default function Navbar() {
             setDisp(false);
           }}
           className="link"
-          to="/internships"
+          to="/experience"
         >
-          Internships
+          Experience
         </NavLink>
         <NavLink
           onClick={() => {
