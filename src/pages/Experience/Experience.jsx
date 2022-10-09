@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./ExperienceCard";
 import data from "../../data/experience.json";
-import "./internships.scss";
+import "./Experience.scss";
 
 export default function Internships() {
   return (

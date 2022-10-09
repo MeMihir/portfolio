@@ -1,6 +1,6 @@
 import React from "react";
 import { getLogos } from "../../utils";
-import "./internshipCard.scss";
+import "./ExperienceCard.scss";
 
 export default function internshipCard(props) {
   const { company, designation, duration, tools, detailed, links } = props.data;
