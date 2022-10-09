@@ -1,8 +1,17 @@
 [
     {
+        "company" : "Murf AI",
+        "designation" : "Software Developer",
+        "duration": "09/2022 - present",
+        "tools" : ["ReactJS"],
+        "detailed" : "Software Developer (Frontend) at Murf AI",
+        "certificate" : "",
+        "links" : ["https://murf.ai/", "https://www.linkedin.com/company/murf-ai", "https://www.instagram.com/murfaistudio/"]
+    },
+    {
         "company" : "Deakin University",
         "designation" : "Visiting Researcher",
-        "duration": "02/2022 - Present",
+        "duration": "02/2022 - 07/2022",
         "tools" : ["Artificial Intelligence (AI)", "Deep Learning", "Research", "TensorFlow", "PyTorch", "Data Science", "Machine Learning", "Natural Language Processing (NLP)", "Python"],
         "detailed" : "Part of final year capstone internship. Working on an End-to-End Financial Document Question-Answering Model under Dr Chetan Arora, Deakin University and Dr Boominathan P, . Aiming for journal publication.",
         "certificate" : "",

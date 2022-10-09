@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Intro from './pages/intro/Intro';
 import AboutMe from './pages/aboutMe/aboutMe';
 import Projects from './pages/projects/Projects';
-import Internships from './pages/internships/Internships';
+import Internships from './pages/Experience/Experience';
 import Certifications from './pages/certification/certifications';
 import Research from './pages/research/research';
 import Education from './pages/education/education';
