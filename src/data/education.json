@@ -1,5 +1,15 @@
 [
     {
+        "institution": "University of Southern California",
+        "level" : "Master of Science in Computer Science (Artificial Intelligence) ",
+        "location": "Los Angeles, California, USA",
+        "from": "January 2023",
+        "to": "December 2024",
+        "grading": "GPA",
+        "grade": "4.0",
+        "logo": "usclogo"
+    },
+    {
         "institution": "Vellore Institute of Technology",
         "level" : "Bacholor's in Computer Science and Engineering",
         "location": "Vellore, Tamil Nadu, India",
