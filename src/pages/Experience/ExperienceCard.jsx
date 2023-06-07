@@ -14,7 +14,7 @@ export default function internshipCard(props) {
       </h2>
       <h4 className="desg"> {designation} <span className="duration"> {duration} </span> </h4>
       <hr />
-      <p className="details"> {detailed} </p>
+      <ul className="details"> {detailed.map(detail => <li>{detail}</li> )} </ul>
       <hr />
       <ul className="tools">
         {tools.map((tool) => (
