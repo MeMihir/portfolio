@@ -1,65 +1,124 @@
 [
-    {
-        "company" : "Murf AI",
-        "designation" : "Software Developer",
-        "duration": "09/2022 - present",
-        "tools" : ["ReactJS", "Framer Motion", "Agile", "Google Analytics", "Firebase", "AWS"],
-        "detailed" : "Developed critical features in the video/audio editing studio. Upgraded Google Analytics from GA3 to GA4. Handled user migration to a newer version of the software. Optimized performance for heavy usage of the software",
-        "certificate" : "",
-        "links" : ["https://murf.ai/", "https://www.linkedin.com/company/murf-ai", "https://www.instagram.com/murfaistudio/"]
-    },
-    {
-        "company" : "Deakin University",
-        "designation" : "Visiting Researcher",
-        "duration": "02/2022 - 07/2022",
-        "tools" : ["Artificial Intelligence (AI)", "Deep Learning", "Research", "TensorFlow", "PyTorch", "Data Science", "Machine Learning", "Natural Language Processing (NLP)", "Python"],
-        "detailed" : "Developed an NLP Question Answering model for tabular and paragraph based financial data under Dr. Chetan Arora. Worked with several advanced models like AlBERT, TaPaS, ELECTRA, etc. Achieved high accuracy with the model developed on benchmark QA datasets.",
-        "certificate" : "",
-        "links" : ["https://www.deakin.edu.au/", "https://www.linkedin.com/school/deakin-university/"]
-    },
-    {
-        "company" : "Velozity Global Solutions India Pvt. Ltd.",
-        "designation" : "Full-Stack Developer",
-        "duration": "01/2022 - 04/2022",
-        "tools" : ["NodeJS", "ReactJS", "NextJS", "NESTJS", "ChakraUI"],
-        "detailed" : "Worked on both frontend and backend development of several projects. Collaborated with over seven other while working on the projects. Worked with several technologies like ReactJS, NodeJS, NextJS, NestJS, ChakraUI, ReactStrap, etc. Developed ECG monitoring interface, Business landing websites and demonstration webapps.",
-        "certificate" : "",
-        "links" : ["https://velozityglobal.com/", "https://www.linkedin.com/company/velozity-global-solutions/", "https://www.instagram.com/velozityglobalsolutions/"]
-    },
-    {
-        "company" : "Samsung PRISM",
-        "designation" : "Research Intern",
-        "duration": "07/2020 - 03/2021",
-        "tools" : ["Natrual Language Processing", "ASR", "Tensorflow", "XgBoost", "BERT"],
-        "detailed" : "Develop an Intelligent Text Normalization for ASR systems that would be used in SAMSUNG products in the future. Worked with advanced technologies such as BERT networks and XgBoost models. Were able to achieve 99.7% accuracy with the proposed model.",
-        "certificate" : "https://drive.google.com/file/d/1j3iptqVeNHZrhsGVZDNjb5Pp2_muSpoD/view?usp=sharing",
-        "links" : ["https://www.samsungprism.com/", "https://www.linkedin.com/company/samsung-india/"]
-    },
-    {
-        "company" : "CamCann",
-        "designation" : "FrontEnd Intern",
-        "duration": "12/2019 - 05/2020",
-        "tools" : ["ReactJS", "NodeJS", "MongoDB", "CI/CD", "Web Design"],
-        "detailed" : "Developed projects such as Online Education Portal, Smart Advertisement System, and Smart Security Dashboard Led 4 interns",
-        "certificate" : "https://drive.google.com/file/d/12KldH-C76ONLrs4EU1cWZ5RCGHfJY-B1/view?usp=sharing",
-        "links" : ["https://www.camcann.com", "https://www.linkedin.com/company/camcann-tech/", "https://www.instagram.com/camcannsmartsystem/"]
-    },
-    {
-        "company" : "EzStudy",
-        "designation" : "FrontEnd Lead",
-        "duration": "12/2019 - 05/2020",
-        "tools" : ["ReactJS", "NodeJS", "MongoDB", "Web Design"],
-        "detailed" : "Developed projects such as Online Education Portal, Smart Advertisement System, and Smart Security Dashboard Led 4 interns",
-        "certificate" : "https://drive.google.com/file/d/12KldH-C76ONLrs4EU1cWZ5RCGHfJY-B1/view?usp=sharing",
-        "links" : ["https://www.ezstudy.live", "https://www.linkedin.com/company/camcann-tech/", "https://www.instagram.com/ezstudy.live/"]
-    },
-    {
-        "company" : "Vorby",
-        "designation" : "Lead Web Developer",
-        "duration": "10/2019 - 04/2020",
-        "tools" : ["ReactJS", "NodeJS", "MongoDB", "DevOps", "Web Design"],
-        "detailed" : "Developed Student Aid Portal Led 2 Jr. Interns",
-        "certificate" : ["https://drive.google.com/file/d/1tQdCEezA0DrbT-K5v4FZRRHxLyC2qdSn/view?usp=sharing"],
-        "links" : ["https://www.vorby.in/", "https://www.linkedin.com/company/vorby/", "https://instagram.com/vorby_in", "https://www.facebook.com/vorby.in"]
-    }
+  {
+    "company": "Murf AI",
+    "designation": "Software Developer",
+    "duration": "09/2022 - present",
+    "tools": [
+      "ReactJS",
+      "Framer Motion",
+      "Agile",
+      "Google Analytics",
+      "Firebase",
+      "AWS"
+    ],
+    "detailed": [
+      "Developed critical features in the video/audio editing studio",
+      "Upgraded Google Analytics from GA3 to GA4.",
+      "Handled user migration to a newer version of the software",
+      "Optimized performance for heavy usage of the software"
+    ],
+    "certificate": "",
+    "links": [
+      "https://murf.ai/",
+      "https://www.linkedin.com/company/murf-ai",
+      "https://www.instagram.com/murfaistudio/"
+    ]
+  },
+  {
+    "company": "Deakin University",
+    "designation": "Visiting Researcher",
+    "duration": "02/2022 - 07/2022",
+    "tools": [
+      "Artificial Intelligence (AI)",
+      "Deep Learning",
+      "Research",
+      "TensorFlow",
+      "PyTorch",
+      "Data Science",
+      "Machine Learning",
+      "Natural Language Processing (NLP)",
+      "Python"
+    ],
+    "detailed": [
+      "Developed an NLP Question Answering model for tabular and paragraph based financial data under Dr. Chetan Arora",
+      "Worked with several advanced models like AlBERT, TaPaS, ELECTRA, etc",
+      "Achieved high accuracy with the model developed on benchmark QA datasets."
+    ],
+    "certificate": "",
+    "links": [
+      "https://www.deakin.edu.au/",
+      "https://www.linkedin.com/school/deakin-university/"
+    ]
+  },
+  {
+    "company": "Velozity Global Solutions India Pvt. Ltd.",
+    "designation": "Full-Stack Developer",
+    "duration": "01/2022 - 04/2022",
+    "tools": ["NodeJS", "ReactJS", "NextJS", "NESTJS", "ChakraUI"],
+    "detailed": [
+      "Worked on both frontend and backend development of several projects",
+      "Collaborated with over seven other while working on the projects.",
+      "Worked with several technologies like ReactJS, NodeJS, NextJS, NestJS, ChakraUI, ReactStrap, etc.",
+      "Developed ECG monitoring interface, Business landing websites and demonstration webapps."
+    ],
+    "certificate": "",
+    "links": [
+      "https://velozityglobal.com/",
+      "https://www.linkedin.com/company/velozity-global-solutions/",
+      "https://www.instagram.com/velozityglobalsolutions/"
+    ]
+  },
+  {
+    "company": "Samsung PRISM",
+    "designation": "Research Intern",
+    "duration": "07/2020 - 03/2021",
+    "tools": [
+      "Natrual Language Processing",
+      "ASR",
+      "Tensorflow",
+      "XgBoost",
+      "BERT"
+    ],
+    "detailed": [
+      "Develop an Intelligent Text Normalization for ASR systems that would be used in SAMSUNG products in the future.",
+      "Worked with advanced technologies such as BERT networks and XgBoost models.",
+      "Were able to achieve 99.7% accuracy with the proposed model."
+    ],
+    "certificate": "https://drive.google.com/file/d/1j3iptqVeNHZrhsGVZDNjb5Pp2_muSpoD/view?usp=sharing",
+    "links": [
+      "https://www.samsungprism.com/",
+      "https://www.linkedin.com/company/samsung-india/"
+    ]
+  },
+  {
+    "company": "CamCann",
+    "designation": "FrontEnd Intern",
+    "duration": "12/2019 - 05/2020",
+    "tools": ["ReactJS", "NodeJS", "MongoDB", "CI/CD", "Web Design"],
+    "detailed": [
+      "Developed projects such as Online Education Portal, Smart Advertisement System, and Smart Security Dashboard Led 4 interns"
+    ],
+    "certificate": "https://drive.google.com/file/d/12KldH-C76ONLrs4EU1cWZ5RCGHfJY-B1/view?usp=sharing",
+    "links": [
+      "https://www.camcann.com",
+      "https://www.linkedin.com/company/camcann-tech/",
+      "https://www.instagram.com/camcannsmartsystem/"
+    ]
+  },
+  {
+    "company": "Vorby",
+    "designation": "Lead Web Developer",
+    "duration": "10/2019 - 04/2020",
+    "tools": ["ReactJS", "NodeJS", "MongoDB", "DevOps", "Web Design"],
+    "detailed": ["Developed Student Aid Portal", "Led 2 Jr. Interns"],
+    "certificate": [
+      "https://drive.google.com/file/d/1tQdCEezA0DrbT-K5v4FZRRHxLyC2qdSn/view?usp=sharing"
+    ],
+    "links": [
+      "https://www.vorby.in/",
+      "https://www.linkedin.com/company/vorby/",
+      "https://instagram.com/vorby_in",
+      "https://www.facebook.com/vorby.in"
+    ]
+  }
 ]
