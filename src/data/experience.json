@@ -3,8 +3,8 @@
         "company" : "Murf AI",
         "designation" : "Software Developer",
         "duration": "09/2022 - present",
-        "tools" : ["ReactJS"],
-        "detailed" : "Software Developer (Frontend) at Murf AI",
+        "tools" : ["ReactJS", "Framer Motion", "Agile", "Google Analytics", "Firebase", "AWS"],
+        "detailed" : "Developed critical features in the video/audio editing studio. Upgraded Google Analytics from GA3 to GA4. Handled user migration to a newer version of the software. Optimized performance for heavy usage of the software",
         "certificate" : "",
         "links" : ["https://murf.ai/", "https://www.linkedin.com/company/murf-ai", "https://www.instagram.com/murfaistudio/"]
     },
@@ -13,7 +13,7 @@
         "designation" : "Visiting Researcher",
         "duration": "02/2022 - 07/2022",
         "tools" : ["Artificial Intelligence (AI)", "Deep Learning", "Research", "TensorFlow", "PyTorch", "Data Science", "Machine Learning", "Natural Language Processing (NLP)", "Python"],
-        "detailed" : "Part of final year capstone internship. Working on an End-to-End Financial Document Question-Answering Model under Dr Chetan Arora, Deakin University and Dr Boominathan P, . Aiming for journal publication.",
+        "detailed" : "Developed an NLP Question Answering model for tabular and paragraph based financial data under Dr. Chetan Arora. Worked with several advanced models like AlBERT, TaPaS, ELECTRA, etc. Achieved high accuracy with the model developed on benchmark QA datasets.",
         "certificate" : "",
         "links" : ["https://www.deakin.edu.au/", "https://www.linkedin.com/school/deakin-university/"]
     },
