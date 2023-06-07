@@ -34,6 +34,36 @@
   color: #61dafb;
 }
 
+.tools {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-size: 1rem;
+
+  li {
+      background-color: black;
+      border-radius: 5px;
+      // border: 1px solid #1a1b38;
+      display: block;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-weight: bold;
+      color: white;
+      margin: 0 0.2rem;
+      border: 0.1rem white solid;
+      transition: 0.3s !important;
+
+  }
+
+  li:hover {
+      background-color: white;
+      color: black;
+  }
+}
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -44,4 +74,15 @@
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+@media screen and (max-width:414px) {
+  .tools {
+    font-size: 0.8rem;
+    padding: 0;
+
+    li {
+      padding: 8px 10px;
+    }
+  }
 }

@@ -16,10 +16,13 @@
     }
     .cert-logo {
       float: right;
-      font-size: 4rem;
+      font-size: 3rem;
+      margin-top: 1rem;
+      padding: 0.2rem;
       cursor: pointer;
       border-radius: 1rem;
       transition: 0.4s;
+      border: 2px solid white;
     }
     .cert-logo:hover {
       background-color: white;
@@ -51,37 +54,6 @@
     z-index: 2;
     opacity: 1;
   }
-
-  .tools {
-    list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    font-size: 1rem;
-
-    li {
-        background-color: black;
-        border-radius: 5px;
-        // border: 1px solid #1a1b38;
-        display: block;
-        text-decoration: none;
-        padding: 10px 15px;
-        font-weight: bold;
-        color: white;
-        margin: 0 0.2rem;
-        border: 0.1rem white solid;
-        cursor: pointer;
-        transition: 0.3s !important;
-
-    }
-
-    li:hover {
-        background-color: white;
-        color: black;
-    }
-  }
 }
 
 
@@ -97,10 +69,6 @@
     .desg {
       font-size: 1rem;
       padding: 2.5% 5%;
-    }
-
-    .tools {
-      padding: 0;
     }
   }
 }
