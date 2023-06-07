@@ -43,7 +43,7 @@ export const getLogos = (link) => {
     );
   } if (link.indexOf("Resume") !== -1) {
     return (
-      <a href={link} target="_blank" rel="noreferrer">
+      <a href={link} target="_blank" rel="noreferrer" download>
         Resume
       </a>
     );
