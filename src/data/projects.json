@@ -1,10 +1,9 @@
-[
-    {
-        "title" : "Master Gesture",
-        "description" : "A hand gesture-based mouse control and swipe gesture-based text input system.",
-        "tools" : ["OpenCV", "Tensorflow", "XGBoost"],
+[{
+        "title" : "Intelligent Pente Playing Agent",
+        "description" : "An Intelligent agent which plays the game Pente, a stratergy board game played on a 19x19 board. Built using C++ and utilizes Alpha-Beta Pruning",
+        "tools" : ["C++", "Artificial Intelligence", "Alpha-Beta Pruning", "Algorithms"],
         "detailed" : "",
-        "links" : ["https://github.com/MeMihir/MasterGestures"]
+        "links" : ["https://github.com/MeMihir/Pente"]
     },
     {
         "title" : "Smart Checkout System",
@@ -17,15 +16,22 @@
         "title" : "COVID Visualizer",
         "description" : "A COVID data visualization dashboard that presented the information in several different graphical formats gave us a deeper insight into the spread of the virus.",
         "tools" : ["Pandas", "Plotly", "Plotly-Dash"],
-        "detailed" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A assumenda architecto tempora expedita quam praesentium minima facilis dicta non, molestiae magni dolorem, dolores cumque ad exercitationem at natus distinctio fuga. Laboriosam nisi laborum eveniet eaque temporibus quibusdam non, enim nesciunt ut libero in, delectus sequi placeat et quidem exercitationem iste ullam consequuntur facere! Sequi consequatur esse animi eveniet quidem delectus molestiae adipisci assumenda, rem commodi nostrum voluptatum ullam, perspiciatis possimus eius est expedita inventore, vero officia? Id ipsa perferendis, tempora at consectetur pariatur suscipit atque rerum aliquam commodi non beatae, assumenda minus! Tempora consequuntur quibusdam excepturi architecto eveniet consectetur? Similique saepe facere ipsum porro impedit maxime et iste, sequi repellendus vero est neque quod voluptatum rerum maiores. Veritatis accusamus ullam mollitia tempora eveniet expedita ea adipisci, blanditiis iusto laborum? Quo explicabo amet, sed sapiente id consequuntur tenetur porro quas pariatur delectus, error aut nisi beatae nemo possimus reiciendis. Dolor cum quisquam voluptatem, harum voluptate maxime, odit aut dolores perferendis id nostrum praesentium ea recusandae in iste qui earum. Hic debitis repellendus architecto quidem culpa reprehenderit tempore eaque provident facere cum. Reiciendis odit placeat cumque repellendus inventore doloremque aliquam dolor dolorum harum impedit. Accusamus, laborum ipsum? Dolorem, non quas nesciunt, ex sint cupiditate facere iusto molestias minus fugit id. Fugit ad dolor recusandae accusamus, molestiae id odit eligendi itaque eveniet voluptate libero repudiandae autem similique ipsam rerum nam. Ratione dolores odio ducimus voluptate porro animi! Optio molestias qui quis quam maiores? Quod quas voluptas, at necessitatibus quia sint, molestiae dolorem expedita soluta nemo, eveniet quidem dolorum perspiciatis! Ipsum illo qui quos sapiente porro labore excepturi veritatis, molestias ea perferendis minima obcaecati delectus a sit architecto commodi! Temporibus, tempora impedit. Nobis tenetur iusto quasi, eius non ipsam, maxime sunt odio quam dolores doloribus accusantium voluptatum reiciendis nisi voluptas ex obcaecati quod. Eum, alias. Blanditiis sapiente molestias eaque. Eos consequatur ratione rerum rem vitae unde! Soluta fuga iste exercitationem a facilis libero sunt reprehenderit, ab eveniet illo sit quaerat adipisci placeat accusantium! Earum magni, eaque iure enim est similique itaque provident ratione. Maxime omnis delectus quisquam consectetur officia voluptates nulla molestiae consequuntur quae atque! Error quos dignissimos cum quam tenetur veniam a id voluptatibus voluptatum obcaecati ullam facere, molestias non laboriosam eum nam excepturi laudantium ratione facilis ipsa? Iure fuga iste iusto culpa molestiae dicta, ipsum voluptatum cupiditate ut tempora, error eveniet eius quibusdam cumque reiciendis explicabo amet voluptatem delectus esse nulla dolores vel. Sint quis repellat, exercitationem debitis, alias praesentium quasi perspiciatis laboriosam enim quas accusantium explicabo unde ipsam illo beatae consectetur, distinctio velit ipsa voluptatibus temporibus provident inventore. Magnam nam pariatur, alias voluptatum incidunt cumque fuga soluta distinctio quas possimus enim, laudantium molestiae repudiandae, dicta itaque. Iure reprehenderit molestias sit optio accusamus laudantium cupiditate porro voluptate repudiandae ut beatae voluptatum ipsa provident, debitis tenetur culpa sequi, corrupti ducimus veritatis doloribus omnis odio. Laborum voluptatem doloribus optio dolores harum expedita vitae magni, cumque vero eligendi deleniti tempora minus inventore sunt numquam rem ratione eos assumenda quos animi consequuntur quaerat sint et necessitatibus.",
+        "detailed" : "",
         "links" : ["https://github.com/MeMihir/nCoViD-Viz","https://ncovidviz.herokuapp.com/", "https://colab.research.google.com/drive/1TfThC2IGlJFI8acCfQdlX42L8uONm5lv?usp=sharing"]
     },
     {
         "title" : "See Food",
         "description" : "Shazam for Food, can identify and classify up to 500 dishes using uploaded or live pictures",
         "tools" : ["Tensorflow", "TFJS", "ReactJS", "OpenCV"],
-        "detailed" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi corporis, dicta quis reiciendis ut quas saepe perferendis iste qui, laudantium, necessitatibus ab? Debitis minus non voluptatibus dolorum unde ad maiores. Vel excepturi blanditiis eligendi, nemo est laborum deserunt, ratione ad fugit fuga perferendis exercitationem consequuntur incidunt aperiam minima beatae laboriosam pariatur at culpa explicabo? Quibusdam similique iusto atque hic, architecto consequatur, numquam laborum fugit maxime dolor necessitatibus? Temporibus similique fuga rem nemo placeat quos numquam incidunt! Vero, natus reprehenderit, nesciunt quasi, necessitatibus deleniti asperiores consequatur laudantium quaerat illo omnis voluptatem aperiam dolore dignissimos adipisci eligendi a. Hic reprehenderit omnis expedita nesciunt, quidem quas. Dicta doloremque praesentium nihil eos soluta, sed voluptatibus saepe quod accusamus consectetur in blanditiis deserunt autem rem vel reprehenderit inventore, temporibus quidem voluptas officia eum tempore odio! Ut provident consequuntur quibusdam hic, natus vel libero sequi porro laboriosam consectetur amet facere sapiente accusantium earum reprehenderit praesentium ullam quas temporibus sed exercitationem architecto sit! Recusandae iure voluptates mollitia ab fugit, cupiditate, accusantium libero perferendis cum est maiores tempora ullam minima numquam, id ea nostrum fuga quos repellendus reiciendis dignissimos? Pariatur nemo aperiam mollitia expedita a optio sapiente similique dolorum vitae rerum numquam, adipisci atque quam, modi placeat labore.",
+        "detailed" : "",
         "links" : ["https://github.com/MeMihir/SeeFood", "https://see-food.netlify.app/", "https://colab.research.google.com/drive/1KYUqaFV_MTbGydyuexiQ5aWbNvjxRQE1?usp=sharing"]
+    },
+    {
+        "title" : "FOL Reslover",
+        "description" : "An Intelligent First Order Logic Evaluator using Unit Resolution Algorithm.",
+        "tools" : ["C++", "Artificial Intelligence", "First Order Logic", "Algorithms"],
+        "detailed" : "",
+        "links" : ["https://github.com/MeMihir/FOL-Resolver"]
     },
     {
         "title" : "SQL to NoSQL Database Converter",
@@ -33,6 +39,13 @@
         "tools" : ["MySQL", "MSSQL", "PostgreSQL", "MongoDB", "NodeJS"],
         "detailed" : "",
         "links" : ["https://github.com/MeMihir/SQL_to_NoSQL"]
+    },
+    {
+        "title" : "Master Gesture",
+        "description" : "A hand gesture-based mouse control and swipe gesture-based text input system.",
+        "tools" : ["OpenCV", "Tensorflow", "XGBoost"],
+        "detailed" : "",
+        "links" : ["https://github.com/MeMihir/MasterGestures"]
     },
     {
         "title": "Automated Vulnerability Assessment and Attack",
