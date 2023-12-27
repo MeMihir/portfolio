@@ -1,0 +1,57 @@
+[{
+        "title" : "Intelligent Pente Playing Agent",
+        "description" : "An Intelligent agent which plays the game Pente, a stratergy board game played on a 19x19 board. Built using C++ and utilizes Alpha-Beta Pruning",
+        "tools" : ["C++", "Artificial Intelligence", "Alpha-Beta Pruning", "Algorithms"],
+        "detailed" : "",
+        "links" : ["https://github.com/MeMihir/Pente"]
+    },
+    {
+        "title" : "Smart Checkout System",
+        "description" : "A smart checkout system inspired by the Amazon Go store, coupled with inventory management and a sales prediction system.",
+        "tools" : ["LSTM", "ReactJS", "NodeJS", "Docker"],
+        "detailed" : "",
+        "links" : ["https://github.com/umangraval/Smart-Checkout","https://smartcheckout.mihirp.me/"]
+    },
+    {
+        "title" : "COVID Visualizer",
+        "description" : "A COVID data visualization dashboard that presented the information in several different graphical formats gave us a deeper insight into the spread of the virus.",
+        "tools" : ["Pandas", "Plotly", "Plotly-Dash"],
+        "detailed" : "",
+        "links" : ["https://github.com/MeMihir/nCoViD-Viz","https://ncovidviz.herokuapp.com/", "https://colab.research.google.com/drive/1TfThC2IGlJFI8acCfQdlX42L8uONm5lv?usp=sharing"]
+    },
+    {
+        "title" : "See Food",
+        "description" : "Shazam for Food, can identify and classify up to 500 dishes using uploaded or live pictures",
+        "tools" : ["Tensorflow", "TFJS", "ReactJS", "OpenCV"],
+        "detailed" : "",
+        "links" : ["https://github.com/MeMihir/SeeFood", "https://see-food.netlify.app/", "https://colab.research.google.com/drive/1KYUqaFV_MTbGydyuexiQ5aWbNvjxRQE1?usp=sharing"]
+    },
+    {
+        "title" : "FOL Reslover",
+        "description" : "An Intelligent First Order Logic Evaluator using Unit Resolution Algorithm.",
+        "tools" : ["C++", "Artificial Intelligence", "First Order Logic", "Algorithms"],
+        "detailed" : "",
+        "links" : ["https://github.com/MeMihir/FOL-Resolver"]
+    },
+    {
+        "title" : "SQL to NoSQL Database Converter",
+        "description" : "A tool to migrate for SQL databases such as MySQL, MSSQL and PostgreSQL to NoSQL databases such as MongoDB",
+        "tools" : ["MySQL", "MSSQL", "PostgreSQL", "MongoDB", "NodeJS"],
+        "detailed" : "",
+        "links" : ["https://github.com/MeMihir/SQL_to_NoSQL"]
+    },
+    {
+        "title" : "Master Gesture",
+        "description" : "A hand gesture-based mouse control and swipe gesture-based text input system.",
+        "tools" : ["OpenCV", "Tensorflow", "XGBoost"],
+        "detailed" : "",
+        "links" : ["https://github.com/MeMihir/MasterGestures"]
+    },
+    {
+        "title": "Automated Vulnerability Assessment and Attack",
+        "description": "An easy to use tool which can be used for passive information gathering, vulnerability assessment and exploitation. An integration of multiple common information and cyber security tools. Can be used to test own website and as an learning tool for newer infosec enthusiasts.",
+        "tools": ["nmap", "wapiti", "nikto", "SQLMap", "metasploit"],
+        "detailed": "",
+        "links": ["https://github.com/MeMihir/AutoVulTack"]
+    }
+]
