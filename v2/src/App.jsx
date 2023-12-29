@@ -9,6 +9,7 @@ import {
   CardHeader,
   Center,
   Container,
+  DarkMode,
   Divider,
   Fade,
   Flex,
@@ -38,28 +39,30 @@ import {
   FaPhone,
   FaTwitter,
 } from "react-icons/fa";
-import { COLOR_SCHEME } from './utils'
+import { COLOR_SCHEME } from "./utils";
 
-import DATA from './data.json';
+import DATA from "./data.json";
 
-const { ABOUT, EDUCATION, EXPERIENCE, PROJECTS, CERTIFICATION, RESEARCH } = DATA
+const { ABOUT, EDUCATION, EXPERIENCE, PROJECTS, CERTIFICATION, RESEARCH } =
+  DATA;
 
 const ProfileDisplay = () => {
   // const router = useRouter();
   const toast = useToast();
   const color = COLOR_SCHEME;
 
-  const firstName = "Mihir"
-  const lastName = "Pavuskar"
+  const firstName = "Mihir";
+  const lastName = "Pavuskar";
   const role = "Software Engineer";
-  const email = 'pavuskar@usc.edu'
-  const phone = "+1 (213) 691 9326"
-  const location = "Los Angeles, CA"
-  const { socials, about, programmingLanguages, tools, languages, hobbies } =  ABOUT
-  const experience = EXPERIENCE
-  const education = EDUCATION
-  const certifications = CERTIFICATION
-  const projects = PROJECTS
+  const email = "pavuskar@usc.edu";
+  const phone = "+1 (213) 691 9326";
+  const location = "Los Angeles, CA";
+  const { socials, about, programmingLanguages, tools, languages, hobbies } =
+    ABOUT;
+  const experience = EXPERIENCE;
+  const education = EDUCATION;
+  const certifications = CERTIFICATION;
+  const projects = PROJECTS;
   const [publications, setPublications] = useState([]);
   const [summary, setSummary] = useState("");
   const [skillsCategory, setSkillsCategory] = useState("programmingLanguages");
@@ -125,16 +128,17 @@ const ProfileDisplay = () => {
             _hover={{
               bg: `${color}.500`,
             }}
-            // onClick={() => {
-            //   scrollBy({ top: window.innerHeight, behavior: "smooth" });
-            // }}
+            onClick={() => {
+              // eslint-disable-next-line no-restricted-globals
+              scrollBy({ top: window.innerHeight, behavior: "smooth" })
+            }}
           >
             {"View Profile"}
           </Button>
           <Box>
             <Icon
               as={Arrow}
-              color={useColorModeValue("gray.800", "gray.300")}
+              color={"gray.300"}
               w={71}
               position={"absolute"}
               right={-71}
@@ -234,7 +238,7 @@ const ProfileDisplay = () => {
           </HStack>
           <Divider orientation="horizontal" />
         </Stack>
-        <Text color={"gray.600"} fontSize={"xl"} px={4}>
+        <Text color={"white"} fontSize={"xl"} px={4}>
           {about}
         </Text>
       </Stack>
@@ -258,10 +262,10 @@ const ProfileDisplay = () => {
           </HStack>
           <Divider orientation="horizontal" />
         </Stack>
-        <Stack px={4} spacing={4} color="black">
+        <Stack px={4} spacing={4}>
           {experience.map((exp, index) => (
             <Box bottom key={index}>
-              <Card key={exp.companyName} size="sm">
+              <Card variant='elevated' key={exp.companyName} size="sm" colorScheme="" >
                 <CardHeader>
                   <Flex justifyContent="space-between">
                     <HStack>
@@ -318,10 +322,10 @@ const ProfileDisplay = () => {
           </HStack>
           <Divider orientation="horizontal" />
         </Stack>
-        <Stack px={4} spacing={4} color="black">
+        <Stack px={4} spacing={4}>
           {education.map((edu, index) => (
             <Box bottom key={index}>
-              <Card key={edu.universityName} size="sm">
+              <Card variant='elevated' key={edu.universityName} size="sm">
                 <CardHeader>
                   <Flex justifyContent="space-between">
                     <HStack>
@@ -368,10 +372,10 @@ const ProfileDisplay = () => {
           </HStack>
           <Divider orientation="horizontal" />
         </Stack>
-        <Stack px={4} spacing={4} color="black">
+        <Stack px={4} spacing={4}>
           {projects.map((proj, index) => (
             <Box bottom key={index}>
-              <Card key={proj.projectName} size="sm">
+              <Card variant='elevated' key={proj.projectName} size="sm">
                 <CardHeader>
                   <Flex justifyContent="space-between">
                     <HStack>
@@ -428,10 +432,10 @@ const ProfileDisplay = () => {
           </HStack>
           <Divider orientation="horizontal" />
         </Stack>
-        <Stack px={4} spacing={4} color="black">
+        <Stack px={4} spacing={4}>
           {certifications.map((certs, index) => (
             <Box bottom key={index}>
-              <Card key={certs.certificateName} size="sm">
+              <Card variant='elevated' key={certs.certificateName} size="sm">
                 <CardHeader>
                   <Flex justifyContent="space-between">
                     <HStack>
@@ -486,10 +490,10 @@ const ProfileDisplay = () => {
           </HStack>
           <Divider orientation="horizontal" />
         </Stack>
-        <Stack px={4} spacing={4} color="black">
+        <Stack px={4} spacing={4}>
           {publications.map((pub, index) => (
             <Box bottom key={index}>
-              <Card key={pub.paperTitle} size="sm">
+              <Card variant='elevated' key={pub.paperTitle} size="sm">
                 <CardHeader>
                   <Flex justifyContent="space-between">
                     <HStack>
@@ -575,7 +579,7 @@ const ProfileDisplay = () => {
             ))}
           </ButtonGroup>
         </Center>
-        <Stack px={4} spacing={4} color="black">
+        <Stack px={4} spacing={4}>
           {skillsCategory === "programmingLanguages" && (
             <HStack flexWrap="wrap">
               {programmingLanguages.map((language) => (
@@ -643,7 +647,7 @@ const ProfileDisplay = () => {
           </HStack>
           <Divider orientation="horizontal" />
         </Stack>
-        <Stack px={4} spacing={4} color="black">
+        <Stack px={4} spacing={4}>
           <HStack flexWrap="wrap">
             {hobbies.map((hobby) => (
               <Badge
@@ -679,7 +683,7 @@ const ProfileDisplay = () => {
           </HStack>
           <Divider orientation="horizontal" />
         </Stack>
-        <Stack px={4} spacing={4} color="black">
+        <Stack px={4} spacing={4}>
           <Textarea readOnly minH={"20rem"} maxH={"20rem"} value={summary} />
         </Stack>
       </Stack>
@@ -688,19 +692,20 @@ const ProfileDisplay = () => {
 
   return (
     <>
-      <Box p={4} mt={"4rem"}>
-        {Header}
-        {About}
-        {Experience}
-        {Education}
-        {Project}
-        {Certification}
-        {Publications}
-        {Skills}
-        {Hobbies}
-        {Summary}
-        
-      </Box>
+      <DarkMode>
+        <Box p={4} backgroundColor={'#040D12'} color={'white'} >
+          {Header}
+          {About}
+          {Experience}
+          {Education}
+          {Project}
+          {Certification}
+          {Publications}
+          {Skills}
+          {Hobbies}
+          {Summary}
+        </Box>
+      </DarkMode>
     </>
   );
 };

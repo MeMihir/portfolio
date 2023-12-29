@@ -1,2 +1,2 @@
 
-export const COLOR_SCHEME = 'purple'
+export const COLOR_SCHEME = 'teal'
