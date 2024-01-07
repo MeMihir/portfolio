@@ -154,21 +154,33 @@ const ProfileDisplay = () => {
             alignSelf={"center"}
             position={"relative"}
           >
-            <Button
-              colorScheme={color}
-              bg={`${color}.400`}
-              rounded={"full"}
-              px={6}
-              _hover={{
-                bg: `${color}.500`,
-              }}
-              onClick={() => {
-                // eslint-disable-next-line no-restricted-globals
-                scrollBy({ top: window.innerHeight, behavior: "smooth" });
-              }}
-            >
-              {"View Profile"}
-            </Button>
+            <ButtonGroup colorScheme={color}>
+              <Button
+                px={6}
+                rounded={"full"}
+                variant={"outline"}
+                as={Link}
+                // remove spl characters from role and take first 4 chars
+                href={`resumes/${role.replace('/','').slice(0,4).toLowerCase()}.pdf`}
+                target="_blank"
+              >
+                {"Open Resume"}
+              </Button>
+              <Button
+                px={6}
+                rounded={"full"}
+                bg={`${color}.400`}
+                _hover={{
+                  bg: `${color}.500`,
+                }}
+                onClick={() => {
+                  // eslint-disable-next-line no-restricted-globals
+                  scrollBy({ top: window.innerHeight, behavior: "smooth" });
+                }}
+              >
+                {"View Profile"}
+              </Button>
+            </ButtonGroup>
             <Box>
               <Icon
                 as={Arrow}
