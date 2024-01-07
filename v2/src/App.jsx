@@ -37,12 +37,14 @@ import {
   FaExternalLinkAlt,
   FaGithub,
   FaGlobeAmericas,
+  FaInstagram,
   FaLinkedin,
   FaPhone,
   FaTwitter,
 } from "react-icons/fa";
 import { COLOR_SCHEME } from "./utils";
 import ScrollSpy from "./components/ScrollSpy";
+import { GoLinkExternal } from "react-icons/go";
 
 import DATA from "./data.json";
 
@@ -161,7 +163,10 @@ const ProfileDisplay = () => {
                 variant={"outline"}
                 as={Link}
                 // remove spl characters from role and take first 4 chars
-                href={`resumes/${role.replace('/','').slice(0,4).toLowerCase()}.pdf`}
+                href={`resumes/${role
+                  .replace("/", "")
+                  .slice(0, 4)
+                  .toLowerCase()}.pdf`}
                 target="_blank"
               >
                 {"Open Resume"}
@@ -316,25 +321,61 @@ const ProfileDisplay = () => {
                 variant="elevated"
                 key={exp.companyName}
                 size="sm"
-                colorScheme=""
+                // bgColor={"#1d232e"}
               >
                 <CardHeader>
                   <Flex justifyContent="space-between">
-                    <HStack>
-                      {/* <Image src={exp.image} h={50} /> */}
-                      <Box px={2} align="left">
-                        <Text fontWeight={600}>{exp.companyName}</Text>
-                        <Text>{exp.role}</Text>
-                      </Box>
-                    </HStack>
-                    <Text px={2} fontWeight={300}>
-                      {exp.fromDate} -{" "}
-                      {exp.currentlyWorking ? "Present" : exp.toDate}
-                    </Text>
+                    {/* <Image src={exp.image} h={50} /> */}
+                    <Box px={2} align="left">
+                      <Text fontWeight={600}>{exp.role}</Text>
+                      <Button
+                        variant="link"
+                        colorScheme={COLOR_SCHEME}
+                        rightIcon={<GoLinkExternal />}
+                        as={Link}
+                        href={exp.links.website}
+                        target="_blank"
+                      >
+                        {exp.companyName}
+                      </Button>
+                      <Text>{exp.location}</Text>
+                    </Box>
+                    <Box>
+                      <Text px={2} fontWeight={300}>
+                        {exp.fromDate} -{" "}
+                        {exp.currentlyWorking ? "Present" : exp.toDate}
+                      </Text>
+                      <ButtonGroup
+                        variant="ghost"
+                        colorScheme={COLOR_SCHEME}
+                        size="sm"
+                        alignItems={"end"}
+                        alignSelf={"end"}
+                      >
+                        {exp.links.linkedin && (
+                          <IconButton
+                            as={Link}
+                            href={exp.links.linkedin}
+                            target="_blank"
+                            aria-label={"LinkedIn"}
+                            icon={<FaLinkedin fontSize="20px" />}
+                          />
+                        )}
+                        {exp.links.instagram && (
+                          <IconButton
+                            as={Link}
+                            href={exp.links.instagram}
+                            target="_blank"
+                            aria-label={"instagram"}
+                            icon={<FaInstagram fontSize="20px" />}
+                          />
+                        )}
+                      </ButtonGroup>
+                    </Box>
                   </Flex>
                 </CardHeader>
                 <CardBody>
-                  <Flex>
+                  <Stack>
                     <List align="left" spacing={3}>
                       {exp.details.map((item, index) => (
                         <ListItem key={index}>
@@ -347,7 +388,21 @@ const ProfileDisplay = () => {
                         </ListItem>
                       ))}
                     </List>
-                  </Flex>
+                    <hr />
+                    <HStack w={"100%"} flexWrap="wrap">
+                      {exp.tools.map((tech, index) => (
+                        <Badge
+                          key={index}
+                          px={2}
+                          py={1}
+                          colorScheme={`${color}`}
+                          borderRadius={"full"}
+                        >
+                          {tech}
+                        </Badge>
+                      ))}
+                    </HStack>
+                  </Stack>
                 </CardBody>
               </Card>
             </Box>
