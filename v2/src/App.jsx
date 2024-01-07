@@ -17,6 +17,8 @@ import {
   Heading,
   Icon,
   IconButton,
+  Image,
+  Link,
   List,
   ListIcon,
   ListItem,
@@ -54,7 +56,6 @@ const ProfileDisplay = () => {
 
   const firstName = "Mihir";
   const lastName = "Pavuskar";
-  const role = "Software Engineer";
   const email = "pavuskar@usc.edu";
   const phone = "+1 (213) 691 9326";
   const location = "Los Angeles, CA";
@@ -64,7 +65,7 @@ const ProfileDisplay = () => {
   const education = EDUCATION;
   const certifications = CERTIFICATION;
   const projects = PROJECTS;
-  const [publications, setPublications] = useState([]);
+  const publications = [];
   const [summary, setSummary] = useState("");
   const [skillsCategory, setSkillsCategory] = useState("programmingLanguages");
   const skillsCategories = [
@@ -83,17 +84,26 @@ const ProfileDisplay = () => {
   ];
 
   const sectionItems = [
-    "hero", // Add the IDs of your sections here
-    "about",
-    "experience",
-    "education",
-    "project",
-    "certification",
-    "publications",
-    "skills",
-    "hobbies",
-    "summary",
+    "Home", // Add the IDs of your sections here
+    "About",
+    "Experience",
+    "Education",
+    "Project",
+    "Certification",
+    "Publications",
+    "Skills",
+    "Hobbies",
+    "Summary",
   ];
+
+  const [role, setRole] = useState("Software Engineer");
+
+  useEffect(() => {
+    const role_path = window.location.pathname[1];
+    const roles = ["", "Data Scientist", "AI/ML Engineer", "Software Engineer"];
+    console.log(role_path, roles[role_path]);
+    setRole(roles[role_path] || "Software Engineer");
+  }, []);
 
   const Arrow = createIcon({
     displayName: "Arrow",
@@ -109,134 +119,145 @@ const ProfileDisplay = () => {
   });
 
   const Header = (
-    <Container w={"100vw"} id="hero" height={"100vh"} ml={'10%'} >
-      <Stack
-        as={Box}
-        textAlign={"center"}
-        spacing={{ base: 8, md: 14 }}
-        pb={{ base: 20, md: 36 }}
-        pt={{ base: 36, md: 52 }}
-      >
-        <Heading
-          fontWeight={600}
-          fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
-          lineHeight={"110%"}
-        >
-          {`${firstName} ${lastName}`} <br />
-          <Text as={"span"} color={`${color}.400`}>
-            {role}
-          </Text>
-        </Heading>
+    <Container
+      maxW={"100vw"}
+      id="Home"
+      height={"100vh"}
+      marginLeft={"-5%"}
+      mr={0}
+      p={5}
+    >
+      <HStack justifyContent={"space-around"} w={"100%"}>
+        <Image src="/profile.jpg" w="45%" />
         <Stack
-          direction={"column"}
-          spacing={3}
-          align={"center"}
-          alignSelf={"center"}
-          position={"relative"}
+          w={"100%"}
+          as={Box}
+          textAlign={"center"}
+          spacing={{ base: 8, md: 14 }}
+          pb={{ base: 20, md: 36 }}
+          pt={{ base: 36, md: 52 }}
         >
-          <Button
-            colorScheme={color}
-            bg={`${color}.400`}
-            rounded={"full"}
-            px={6}
-            _hover={{
-              bg: `${color}.500`,
-            }}
-            onClick={() => {
-              // eslint-disable-next-line no-restricted-globals
-              scrollBy({ top: window.innerHeight, behavior: "smooth" });
-            }}
+          <Heading
+            fontWeight={600}
+            fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
+            lineHeight={"110%"}
           >
-            {"View Profile"}
-          </Button>
-          <Box>
-            <Icon
-              as={Arrow}
-              color={"gray.300"}
-              w={71}
-              position={"absolute"}
-              right={-71}
-              top={"10px"}
-            />
-            <Text
-              fontSize={"lg"}
-              fontFamily={"Caveat"}
-              position={"absolute"}
-              right={"-85px"}
-              top={"-15px"}
-              transform={"rotate(10deg)"}
-            >
-              Click me!
+            {`${firstName} ${lastName}`} <br />
+            <Text as={"span"} color={`${color}.400`}>
+              {role}
             </Text>
-            <VStack spacing={4} align="center">
-              <ButtonGroup
-                spacing={4}
-                mt={4}
-                colorScheme={color}
-                variant="ghost"
+          </Heading>
+          <Stack
+            direction={"column"}
+            spacing={3}
+            align={"center"}
+            alignSelf={"center"}
+            position={"relative"}
+          >
+            <Button
+              colorScheme={color}
+              bg={`${color}.400`}
+              rounded={"full"}
+              px={6}
+              _hover={{
+                bg: `${color}.500`,
+              }}
+              onClick={() => {
+                // eslint-disable-next-line no-restricted-globals
+                scrollBy({ top: window.innerHeight, behavior: "smooth" });
+              }}
+            >
+              {"View Profile"}
+            </Button>
+            <Box>
+              <Icon
+                as={Arrow}
+                color={"gray.300"}
+                w={71}
+                position={"absolute"}
+                right={-71}
+                top={"10px"}
+              />
+              <Text
+                fontSize={"lg"}
+                fontFamily={"Caveat"}
+                position={"absolute"}
+                right={"-85px"}
+                top={"-15px"}
+                transform={"rotate(10deg)"}
               >
-                {email && (
-                  <IconButton
-                    // as={Link}
-                    href={`mailto:${email}`}
-                    aria-label={"Email"}
-                    icon={<FaEnvelope fontSize="20px" />}
-                  />
-                )}
-                {phone && (
-                  <IconButton
-                    // as={Link}
-                    href={`tel:${phone}`}
-                    aria-label={"Phone"}
-                    icon={<FaPhone fontSize="20px" />}
-                  />
-                )}
-                {socials.linkedIn && (
-                  <IconButton
-                    // as={Link}
-                    href={socials.linkedIn}
-                    target="_blank"
-                    aria-label={"LinkedIn"}
-                    icon={<FaLinkedin fontSize="20px" />}
-                  />
-                )}
-                {socials.github && (
-                  <IconButton
-                    // as={Link}
-                    href={socials.github}
-                    target="_blank"
-                    aria-label={"GitHub"}
-                    icon={<FaGithub fontSize="20px" />}
-                  />
-                )}
-                {socials.twitter && (
-                  <IconButton
-                    // as={Link}
-                    href={socials.twitter}
-                    target="_blank"
-                    aria-label={"Twitter"}
-                    icon={<FaTwitter fontSize="20px" />}
-                  />
-                )}
-                {socials.portfolio && (
-                  <IconButton
-                    // as={Link}
-                    href={socials.portfolio}
-                    target="_blank"
-                    aria-label={"Portfolio"}
-                    icon={<FaGlobeAmericas fontSize="20px" />}
-                  />
-                )}
-              </ButtonGroup>
-            </VStack>
-          </Box>
+                Click me!
+              </Text>
+              <VStack spacing={4} align="center">
+                <ButtonGroup
+                  spacing={4}
+                  mt={4}
+                  colorScheme={color}
+                  variant="ghost"
+                >
+                  {email && (
+                    <IconButton
+                      as={Link}
+                      href={`mailto:${email}`}
+                      aria-label={"Email"}
+                      icon={<FaEnvelope fontSize="20px" />}
+                    />
+                  )}
+                  {phone && (
+                    <IconButton
+                      as={Link}
+                      href={`tel:${phone}`}
+                      aria-label={"Phone"}
+                      icon={<FaPhone fontSize="20px" />}
+                    />
+                  )}
+                  {socials.linkedin && (
+                    <IconButton
+                      as={Link}
+                      href={socials.linkedin}
+                      target="_blank"
+                      aria-label={"LinkedIn"}
+                      icon={<FaLinkedin fontSize="20px" />}
+                    />
+                  )}
+                  {socials.github && (
+                    <IconButton
+                      as={Link}
+                      href={socials.github}
+                      target="_blank"
+                      aria-label={"GitHub"}
+                      icon={<FaGithub fontSize="20px" />}
+                    />
+                  )}
+                  {socials.twitter && (
+                    <IconButton
+                      as={Link}
+                      href={socials.twitter}
+                      target="_blank"
+                      aria-label={"Twitter"}
+                      icon={<FaTwitter fontSize="20px" />}
+                    />
+                  )}
+                  {socials.portfolio && (
+                    <IconButton
+                      as={Link}
+                      href={socials.portfolio}
+                      target="_blank"
+                      aria-label={"Portfolio"}
+                      icon={<FaGlobeAmericas fontSize="20px" />}
+                    />
+                  )}
+                </ButtonGroup>
+              </VStack>
+            </Box>
+          </Stack>
         </Stack>
-      </Stack>
+      </HStack>
     </Container>
   );
 
   const About = (
-    <Container maxW={"3xl"} id="about">
+    <Container maxW={"3xl"} id="About">
       <Stack
         as={Box}
         textAlign={"center"}
@@ -260,7 +281,7 @@ const ProfileDisplay = () => {
   );
 
   const Experience = (
-    <Container maxW={"3xl"} id="experience">
+    <Container maxW={"3xl"} id="Experience">
       <Stack
         as={Box}
         textAlign={"center"}
@@ -325,7 +346,7 @@ const ProfileDisplay = () => {
   );
 
   const Education = (
-    <Container maxW={"3xl"} id="education">
+    <Container maxW={"3xl"} id="Education">
       <Stack
         as={Box}
         textAlign={"center"}
@@ -375,7 +396,7 @@ const ProfileDisplay = () => {
   );
 
   const Project = (
-    <Container maxW={"3xl"} id="project">
+    <Container maxW={"3xl"} id="Project">
       <Stack
         as={Box}
         textAlign={"center"}
@@ -435,7 +456,7 @@ const ProfileDisplay = () => {
   );
 
   const Certification = (
-    <Container maxW={"3xl"} id="certification">
+    <Container maxW={"3xl"} id="Certification">
       <Stack
         as={Box}
         textAlign={"center"}
@@ -493,7 +514,7 @@ const ProfileDisplay = () => {
   );
 
   const Publications = (
-    <Container maxW={"3xl"} id="publications">
+    <Container maxW={"3xl"} id="Publications">
       <Stack
         as={Box}
         textAlign={"center"}
@@ -564,7 +585,7 @@ const ProfileDisplay = () => {
   );
 
   const Skills = (
-    <Container maxW={"3xl"} id="skills">
+    <Container maxW={"3xl"} id="Skills">
       <Stack
         as={Box}
         textAlign={"center"}
@@ -650,7 +671,7 @@ const ProfileDisplay = () => {
   );
 
   const Hobbies = (
-    <Container maxW={"3xl"} id="hobbies">
+    <Container maxW={"3xl"} id="Hobbies">
       <Stack
         as={Box}
         textAlign={"center"}
@@ -686,7 +707,7 @@ const ProfileDisplay = () => {
   );
 
   const Summary = (
-    <Container maxW={"3xl"} id="summary">
+    <Container maxW={"3xl"} id="Summary">
       <Stack
         as={Box}
         textAlign={"center"}

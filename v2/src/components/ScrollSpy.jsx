@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Box, VStack } from "@chakra-ui/react";
 
 const ScrollSpy = ({ items, offset = 0, children }) => {
-  const [activeSection, setActiveSection] = useState(null);
+  const [activeSection, setActiveSection] = useState(items[0]);
 
   const handleScroll = () => {
 		const scrollY = window.scrollY;
@@ -58,7 +58,7 @@ const ScrollSpy = ({ items, offset = 0, children }) => {
 				pt={"10%"}
         width="20%"
 				h={'100vh'}
-				opacity={activeSection === 'hero' ? 0:1}
+				opacity={activeSection === items[0] ? 0:1}
 				transitionDuration={'0.5s'}
       >
         {items.map((section) => (
@@ -75,7 +75,7 @@ const ScrollSpy = ({ items, offset = 0, children }) => {
           </Box>
         ))}
       </VStack>
-      <Box p={4} color={'white'} width="80%" ml={"20%"}>
+      <Box p={4} color={'white'} width="85%" ml={"15%"}>
         {children}
       </Box>
     </Box>
