@@ -40,6 +40,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { COLOR_SCHEME } from "./utils";
+import ScrollSpy from "./components/ScrollSpy";
 
 import DATA from "./data.json";
 
@@ -81,6 +82,19 @@ const ProfileDisplay = () => {
     },
   ];
 
+  const sectionItems = [
+    "hero", // Add the IDs of your sections here
+    "about",
+    "experience",
+    "education",
+    "project",
+    "certification",
+    "publications",
+    "skills",
+    "hobbies",
+    "summary",
+  ];
+
   const Arrow = createIcon({
     displayName: "Arrow",
     viewBox: "0 0 72 24",
@@ -95,7 +109,7 @@ const ProfileDisplay = () => {
   });
 
   const Header = (
-    <Container maxW={"3xl"} id="hero" height={"100vh"}>
+    <Container w={"100vw"} id="hero" height={"100vh"} ml={'10%'} >
       <Stack
         as={Box}
         textAlign={"center"}
@@ -130,7 +144,7 @@ const ProfileDisplay = () => {
             }}
             onClick={() => {
               // eslint-disable-next-line no-restricted-globals
-              scrollBy({ top: window.innerHeight, behavior: "smooth" })
+              scrollBy({ top: window.innerHeight, behavior: "smooth" });
             }}
           >
             {"View Profile"}
@@ -265,7 +279,12 @@ const ProfileDisplay = () => {
         <Stack px={4} spacing={4}>
           {experience.map((exp, index) => (
             <Box bottom key={index}>
-              <Card variant='elevated' key={exp.companyName} size="sm" colorScheme="" >
+              <Card
+                variant="elevated"
+                key={exp.companyName}
+                size="sm"
+                colorScheme=""
+              >
                 <CardHeader>
                   <Flex justifyContent="space-between">
                     <HStack>
@@ -325,7 +344,7 @@ const ProfileDisplay = () => {
         <Stack px={4} spacing={4}>
           {education.map((edu, index) => (
             <Box bottom key={index}>
-              <Card variant='elevated' key={edu.universityName} size="sm">
+              <Card variant="elevated" key={edu.universityName} size="sm">
                 <CardHeader>
                   <Flex justifyContent="space-between">
                     <HStack>
@@ -375,7 +394,7 @@ const ProfileDisplay = () => {
         <Stack px={4} spacing={4}>
           {projects.map((proj, index) => (
             <Box bottom key={index}>
-              <Card variant='elevated' key={proj.projectName} size="sm">
+              <Card variant="elevated" key={proj.projectName} size="sm">
                 <CardHeader>
                   <Flex justifyContent="space-between">
                     <HStack>
@@ -435,7 +454,7 @@ const ProfileDisplay = () => {
         <Stack px={4} spacing={4}>
           {certifications.map((certs, index) => (
             <Box bottom key={index}>
-              <Card variant='elevated' key={certs.certificateName} size="sm">
+              <Card variant="elevated" key={certs.certificateName} size="sm">
                 <CardHeader>
                   <Flex justifyContent="space-between">
                     <HStack>
@@ -493,7 +512,7 @@ const ProfileDisplay = () => {
         <Stack px={4} spacing={4}>
           {publications.map((pub, index) => (
             <Box bottom key={index}>
-              <Card variant='elevated' key={pub.paperTitle} size="sm">
+              <Card variant="elevated" key={pub.paperTitle} size="sm">
                 <CardHeader>
                   <Flex justifyContent="space-between">
                     <HStack>
@@ -693,7 +712,7 @@ const ProfileDisplay = () => {
   return (
     <>
       <DarkMode>
-        <Box p={4} backgroundColor={'#040D12'} color={'white'} >
+        <ScrollSpy items={sectionItems} offset={50}>
           {Header}
           {About}
           {Experience}
@@ -704,7 +723,7 @@ const ProfileDisplay = () => {
           {Skills}
           {Hobbies}
           {Summary}
-        </Box>
+        </ScrollSpy>
       </DarkMode>
     </>
   );
