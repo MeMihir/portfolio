@@ -376,7 +376,7 @@ const ProfileDisplay = () => {
                 </CardHeader>
                 <CardBody>
                   <Stack>
-                    <List align="left" spacing={3}>
+                    <List align="left" spacing={1}>
                       {exp.details.map((item, index) => (
                         <ListItem key={index}>
                           <ListIcon
@@ -429,35 +429,79 @@ const ProfileDisplay = () => {
           </HStack>
           <Divider orientation="horizontal" />
         </Stack>
-        <Stack px={4} spacing={4}>
+        <HStack px={4} spacing={4}>
           {education.map((edu, index) => (
-            <Box bottom key={index}>
-              <Card variant="elevated" key={edu.universityName} size="sm">
-                <CardHeader>
-                  <Flex justifyContent="space-between">
-                    <HStack>
-                      {/* <Image src={edu.image} h={50} /> */}
-                      <Box px={2} align="left">
-                        <Text fontWeight={600}>{edu.universityName}</Text>
-                        <Text>{edu.degree}</Text>
-                        <Text>{edu.major}</Text>
-                      </Box>
-                    </HStack>
-                    <VStack>
-                      <Text px={2} fontWeight={300}>
-                        {edu.fromDate} -{" "}
-                        {edu.currentlyWorking ? "Present" : edu.toDate}
-                      </Text>
-                      <Text px={2} fontWeight={300}>
-                        {edu.score}
-                      </Text>
-                    </VStack>
-                  </Flex>
-                </CardHeader>
-              </Card>
-            </Box>
+            <Card
+              role={"group"}
+              p={6}
+              maxW={"330px"}
+              w={"full"}
+              // bg={useColorModeValue('white', 'gray.800')}
+              boxShadow={"2xl"}
+              rounded={"lg"}
+              pos={"relative"}
+              zIndex={1}
+            >
+              <CardBody
+                rounded={"lg"}
+                mt={-12}
+                pos={"relative"}
+                height={"230px"}
+                _after={{
+                  transition: "all .3s ease",
+                  content: '""',
+                  w: "full",
+                  h: "full",
+                  pos: "absolute",
+                  top: 5,
+                  left: 0,
+                  backgroundImage: `logos/${edu.logo}.png`,
+                  filter: "blur(15px)",
+                  zIndex: -1,
+                }}
+                _groupHover={{
+                  _after: {
+                    filter: "blur(20px)",
+                  },
+                }}
+              >
+                <Image
+                  rounded={"lg"}
+                  height={230}
+                  width={300}
+                  objectFit={"cover"}
+                  src={`logos/${edu.logo}.png`}
+                  alt="#"
+                />
+              </CardBody>
+              <Stack pt={10} align={"center"}>
+                <Heading fontSize={"2xl"} fontFamily={"body"} fontWeight={500}>
+                  {edu.universityName}
+                </Heading>
+                <Text
+                  // color={"whi"}
+                  fontSize={"sm"}
+                  textTransform={"uppercase"}
+                >
+                  {edu.degree}
+                </Text>
+                <Text
+                  color={"gray.500"}
+                  fontSize={"sm"}
+                  textTransform={"uppercase"}
+                >
+                  {edu.fromDate} - {edu.toDate}
+                </Text>
+                <Stack direction={"row"} align={"center"}>
+                  <Text fontWeight={800} fontSize={"xl"}>
+                    {edu.score}
+                  </Text>
+                  <Text>GPA</Text>
+                </Stack>
+              </Stack>
+            </Card>
           ))}
-        </Stack>
+        </HStack>
       </Stack>
     </Container>
   );
