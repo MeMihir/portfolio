@@ -36,6 +36,7 @@ import DATA from "./data.json";
 import Hero from "./components/Hero";
 import Experience from "./components/Experience";
 import Project from "./components/Project";
+import Certifications from "./components/Certifications";
 
 const { ABOUT, EDUCATION, EXPERIENCE, PROJECTS, CERTIFICATION, RESEARCH } =
   DATA;
@@ -52,7 +53,6 @@ const ProfileDisplay = () => {
   const { socials, about, programmingLanguages, tools, languages, hobbies } =
     ABOUT;
   const education = EDUCATION;
-  const certifications = CERTIFICATION;
   const publications = [];
   const [summary, setSummary] = useState("");
   const [skillsCategory, setSkillsCategory] = useState("programmingLanguages");
@@ -207,64 +207,6 @@ const ProfileDisplay = () => {
             </Card>
           ))}
         </HStack>
-      </Stack>
-    </Container>
-  );
-
-  const Certification = (
-    <Container maxW={"3xl"} id="Certification">
-      <Stack
-        as={Box}
-        textAlign={"center"}
-        spacing={{ base: 8, md: 14 }}
-        pb={{ base: 20, md: 36 }}
-      >
-        <Stack align="center" direction="row" px={4}>
-          <HStack mx={4}>
-            <Text color={`${color}.400`} fontWeight={800}>
-              05
-            </Text>
-            <Text fontWeight={800}>Certification / Achievements</Text>
-          </HStack>
-          <Divider orientation="horizontal" />
-        </Stack>
-        <Stack px={4} spacing={4}>
-          {certifications.map((certs, index) => (
-            <Box bottom key={index}>
-              <Card variant="elevated" key={certs.certificateName} size="sm">
-                <CardHeader>
-                  <Flex justifyContent="space-between">
-                    <HStack>
-                      {/* <Image src={certs.image} h={50} /> */}
-                      <Box px={2} align="left">
-                        <Text fontWeight={600}>{certs.certificateName}</Text>
-                        <Text>{certs.institution}</Text>
-                        <IconButton
-                          // as={Link}
-                          href={certs.link}
-                          target="_blank"
-                          aria-label={`${certs.certificateName}`}
-                          icon={<FaExternalLinkAlt />}
-                          size="xs"
-                          variant="ghost"
-                          colorScheme={COLOR_SCHEME}
-                        />
-                      </Box>
-                    </HStack>
-                    <VStack>
-                      <Text px={2} fontWeight={300}>
-                        {certs.dateIssued}
-                      </Text>
-                      <Text px={2} fontWeight={300}>
-                        {certs.score}
-                      </Text>
-                    </VStack>
-                  </Flex>
-                </CardHeader>
-              </Card>
-            </Box>
-          ))}
-        </Stack>
       </Stack>
     </Container>
   );
@@ -503,8 +445,8 @@ const ProfileDisplay = () => {
           <Experience experience={EXPERIENCE} />
           {Education}
           <Project projects={PROJECTS} role={role} />
-          {Certification}
-          {Publications}
+          <Certifications certifications={CERTIFICATION} />
+          {/* {Publications} */}
           {Skills}
           {Hobbies}
           {Summary}
