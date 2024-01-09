@@ -1,9 +1,40 @@
-import { Box, Button, ButtonGroup, Container, HStack, Heading, Icon, IconButton, Image, Link, Stack, Text, VStack, createIcon } from '@chakra-ui/react';
-import React from 'react'
-import { FaEnvelope, FaGithub, FaGlobeAmericas, FaLinkedin, FaPhone, FaTwitter } from 'react-icons/fa';
+import {
+  Box,
+  Button,
+  ButtonGroup,
+  Container,
+  HStack,
+  Heading,
+  Icon,
+  IconButton,
+  Image,
+  Link,
+  Stack,
+  Text,
+  VStack,
+  createIcon,
+} from "@chakra-ui/react";
+import React from "react";
+import {
+  FaEnvelope,
+  FaGithub,
+  FaGlobeAmericas,
+  FaLinkedin,
+  FaPhone,
+  FaTwitter,
+} from "react-icons/fa";
+import { ROLES } from "../utils";
 
-export default function Hero({ firstName, lastName, role, color, email, phone, socials }) {
-	const Arrow = createIcon({
+export default function Hero({
+  firstName,
+  lastName,
+  role,
+  color,
+  email,
+  phone,
+  socials,
+}) {
+  const Arrow = createIcon({
     displayName: "Arrow",
     viewBox: "0 0 72 24",
     path: (
@@ -42,7 +73,7 @@ export default function Hero({ firstName, lastName, role, color, email, phone, s
           >
             {`${firstName} ${lastName}`} <br />
             <Text as={"span"} color={`${color}.400`}>
-              {role}
+              {ROLES[role]}
             </Text>
           </Heading>
           <Stack
@@ -59,10 +90,7 @@ export default function Hero({ firstName, lastName, role, color, email, phone, s
                 variant={"outline"}
                 as={Link}
                 // remove spl characters from role and take first 4 chars
-                href={`resumes/${role
-                  .replace("/", "")
-                  .slice(0, 4)
-                  .toLowerCase()}.pdf`}
+                href={`resumes/${role}.pdf`}
                 target="_blank"
               >
                 {"Open Resume"}
@@ -167,5 +195,5 @@ export default function Hero({ firstName, lastName, role, color, email, phone, s
         </Stack>
       </HStack>
     </Container>
-  )
+  );
 }

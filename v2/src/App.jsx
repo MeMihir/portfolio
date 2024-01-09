@@ -84,13 +84,13 @@ const ProfileDisplay = () => {
     "Summary",
   ];
 
-  const [role, setRole] = useState("Software Engineer");
+  const [role, setRole] = useState("soft");
 
   useEffect(() => {
     const role_path = window.location.pathname[1];
-    const roles = ["", "Data Scientist", "AI/ML Engineer", "Software Engineer"];
+    const roles = ["", "data", "aiml", "soft"];
     console.log(role_path, roles[role_path]);
-    setRole(roles[role_path] || "Software Engineer");
+    setRole(roles[role_path] || "soft");
   }, []);
 
   const About = (
@@ -502,7 +502,7 @@ const ProfileDisplay = () => {
           {About}
           <Experience experience={EXPERIENCE} />
           {Education}
-          <Project projects={PROJECTS} />
+          <Project projects={PROJECTS} role={role} />
           {Certification}
           {Publications}
           {Skills}
