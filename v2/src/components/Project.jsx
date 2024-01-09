@@ -2,16 +2,15 @@ import {
   Badge,
   Box,
   Button,
+  ButtonGroup,
   Card,
   CardBody,
-  CardFooter,
   CardHeader,
+  Center,
   Container,
   Divider,
   Flex,
   HStack,
-  IconButton,
-  Image,
   Link,
   List,
   ListIcon,
@@ -20,8 +19,8 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
-import { COLOR_SCHEME } from "../utils";
+import React, { useEffect, useState } from "react";
+import { CATEGORIES, COLOR_SCHEME } from "../utils";
 import { FaChevronRight, FaGithub, FaGlobeAmericas } from "react-icons/fa";
 import { SiGooglecolab } from "react-icons/si";
 
@@ -85,8 +84,8 @@ function ProjectCard({ project }) {
         </VStack>
       </CardHeader>
       <CardBody>
-        <Flex>
-          <Image src={project.image} h={50} />
+        <Flex mb={2}>
+          {/* <Image src={project.image} h={50} /> */}
           <List align="left" spacing={1}>
             <ListItem>
               <ListIcon
@@ -116,19 +115,39 @@ function ProjectCard({ project }) {
             </Button>
           </List>
         </Flex>
+        <hr />
+        <HStack flexWrap={"wrap"} mt={2}>
+          {project.tools.map((tool, index) => (
+            <Badge
+              key={index}
+              colorScheme={COLOR_SCHEME}
+              m={0.5}
+              borderRadius={"full"}
+            >
+              {tool}
+            </Badge>
+          ))}
+        </HStack>
       </CardBody>
-      <CardFooter flexWrap={"wrap"} >
-        {project.tools.map((tool, index) => (
-          <Badge key={index} colorScheme={COLOR_SCHEME} m={0.5}  >
-            {tool}
-          </Badge>
-        ))}
-      </CardFooter>
     </Card>
   );
 }
 
-export default function Project({ projects }) {
+export default function Project({ projects, role }) {
+  const [category, setCategory] = useState("soft");
+  const [currProjects, setCurrProjects] = useState([]);
+
+  useEffect(() => {
+    setCategory(role);
+    setCurrProjects(projects.filter((project) => project.tags.includes(role)));
+  }, [role, projects]);
+
+  useEffect(() => {
+    setCurrProjects(
+      projects.filter((project) => project.tags.includes(category))
+    );
+  }, [category, projects]);
+
   return (
     <Container maxW={"3xl"} id="Project">
       <Stack
@@ -146,8 +165,21 @@ export default function Project({ projects }) {
           </HStack>
           <Divider orientation="horizontal" />
         </Stack>
+        <Center>
+          <ButtonGroup variant="outline" alignItems={"end"}>
+            {Object.keys(CATEGORIES).map((cat, index) => (
+              <Button
+                key={index}
+                colorScheme={category === cat ? `${COLOR_SCHEME}` : "gray"}
+                onClick={() => setCategory(cat)}
+              >
+                {CATEGORIES[cat]}
+              </Button>
+            ))}
+          </ButtonGroup>
+        </Center>
         <Stack px={4} spacing={4}>
-          {projects.map((proj, index) => (
+          {currProjects.map((proj, index) => (
             <ProjectCard project={proj} key={index} />
           ))}
         </Stack>
