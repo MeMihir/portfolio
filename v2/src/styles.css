@@ -1,0 +1,41 @@
+body {
+  /* cursor: none; */
+}
+
+body::before,
+body::after {
+  position: fixed;
+  pointer-events: none;
+  /* z-index: 100000; */
+}
+
+body::before {
+  content: "";
+  width: 50vw;
+  height: 50vw;
+  border-radius: 50%;
+  position: fixed;
+  left: calc(var(--mouse-x) - 25vw);
+  top: calc(var(--mouse-y) - 25vw);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.05) 25%,
+    rgba(255, 255, 255, 0.05) 25%,
+    rgba(255, 255, 255, 0.01) 50%,
+    rgba(255, 255, 255, 0.005) 50%,
+    rgba(255, 255, 255, 0.001) 75%,
+    rgba(255, 255, 255, 0.0005) 75%,
+    rgba(255, 255, 255, 0.0001) 100%,
+    rgba(255, 255, 255, 0.0005) 100%
+  );
+}
+
+body::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  /* background: #00c6ff; */
+  border-radius: 50%;
+  left: calc(var(--mouse-x) - 2.5px);
+  top: calc(var(--mouse-y) - 2.5px);
+}

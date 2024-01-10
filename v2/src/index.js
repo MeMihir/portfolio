@@ -4,6 +4,12 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
+import './styles.css';
+
+document.addEventListener('mousemove', e => {
+  document.body.style.setProperty('--mouse-x', e.clientX + 'px');
+  document.body.style.setProperty('--mouse-y', e.clientY + 'px');
+});
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
