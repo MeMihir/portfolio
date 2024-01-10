@@ -25,10 +25,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import {
-  FaChevronRight,
-  FaExternalLinkAlt,
-} from "react-icons/fa";
+import { FaChevronRight, FaExternalLinkAlt } from "react-icons/fa";
 import { COLOR_SCHEME } from "./utils";
 import ScrollSpy from "./components/ScrollSpy";
 
@@ -92,6 +89,14 @@ const ProfileDisplay = () => {
     console.log(role_path, roles[role_path]);
     setRole(roles[role_path] || "soft");
   }, []);
+
+  const Starts = (
+    <>
+      <div id="starts"></div>
+      <div id="starts2"></div>
+      <div id="starts3"></div>
+    </>
+  );
 
   const About = (
     <Container maxW={"3xl"} id="About">
@@ -430,7 +435,8 @@ const ProfileDisplay = () => {
 
   return (
     <>
-      <DarkMode>
+      <DarkMode className="darkBG">
+        {Starts}
         <ScrollSpy items={sectionItems} offset={50}>
           <Hero
             firstName={firstName}

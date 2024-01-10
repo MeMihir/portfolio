@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Box, VStack } from "@chakra-ui/react";
+import { COLOR_SCHEME } from "../utils";
 
 const ScrollSpy = ({ items, offset = 0, children }) => {
   const [activeSection, setActiveSection] = useState(items[0]);
@@ -47,7 +48,7 @@ const ScrollSpy = ({ items, offset = 0, children }) => {
   };
 
   return (
-    <Box bg="#040D12">
+    <Box id="main-content" >
       <VStack
         align="start"
         spacing={4}
@@ -60,14 +61,17 @@ const ScrollSpy = ({ items, offset = 0, children }) => {
 				h={'100vh'}
 				opacity={activeSection === items[0] ? 0:1}
 				transitionDuration={'0.5s'}
+        background="transparent"
       >
         {items.map((section) => (
           <Box
             key={section}
             px={4}
             py={2}
-            borderBottom={activeSection === section ? '2px solid #ffffff' : 'none'}
-            color={activeSection === section ? '#ffffff' : 'gray.400'}
+            borderBottom={activeSection === section ? "2px solid" : 'none'}
+            borderBottomColor={activeSection === section ? `${COLOR_SCHEME}.400` : 'none'}
+            color={activeSection === section ? `${COLOR_SCHEME}.400` : 'gray.400'}
+            _hover={{ color: `${COLOR_SCHEME}.400` }}
             cursor="pointer"
             onClick={() => scrollToSection(section)}
           >
@@ -75,7 +79,7 @@ const ScrollSpy = ({ items, offset = 0, children }) => {
           </Box>
         ))}
       </VStack>
-      <Box p={4} color={'white'} width="85%" ml={"15%"}>
+      <Box p={4} color={'white'} width="85%" ml={"15%"} id="main-content" >
         {children}
       </Box>
     </Box>
