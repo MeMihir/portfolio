@@ -1,4 +1,23 @@
-import { Badge, Box, Button, ButtonGroup, Card, CardBody, CardHeader, Container, Divider, Flex, HStack, IconButton, Link, List, ListIcon, ListItem, Stack, Text } from "@chakra-ui/react";
+import {
+  Badge,
+  Box,
+  Button,
+  ButtonGroup,
+  Card,
+  CardBody,
+  CardHeader,
+  Container,
+  Divider,
+  Flex,
+  HStack,
+  IconButton,
+  Link,
+  List,
+  ListIcon,
+  ListItem,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
 import React from "react";
 import { FaChevronRight, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { GoLinkExternal } from "react-icons/go";
@@ -26,7 +45,9 @@ export default function Experience({ experience }) {
           {experience.map((exp, index) => (
             <Box bottom key={index}>
               <Card
-                variant="elevated"
+                bgColor={"rgba(45,55,72,0.2)"}
+                _hover={{ bgColor: "rgba(45,55,72,0.5)" }}
+                transition={"0.5s ease"}
                 key={exp.companyName}
                 size="sm"
                 // bgColor={"#1d232e"}

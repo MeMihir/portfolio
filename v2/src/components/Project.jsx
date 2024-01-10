@@ -28,7 +28,13 @@ function ProjectCard({ project }) {
   const [showDetails, setShowDetails] = useState(false);
 
   return (
-    <Card variant="elevated" key={project.projectName} size="sm">
+    <Card
+      key={project.projectName}
+      size="sm"
+      bgColor={"rgba(45,55,72,0.2)"}
+      _hover={{ bgColor: "rgba(45,55,72,0.5)" }}
+      transition={"0.5s ease"}
+    >
       <CardHeader>
         <VStack>
           <HStack justifyContent={"space-between"} w={"100%"}>
