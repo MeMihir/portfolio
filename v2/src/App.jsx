@@ -75,10 +75,8 @@ const ProfileDisplay = () => {
     "Education",
     "Project",
     "Certification",
-    "Publications",
     "Skills",
     "Hobbies",
-    "Summary",
   ];
 
   const [role, setRole] = useState("soft");
@@ -294,6 +292,7 @@ const ProfileDisplay = () => {
         textAlign={"center"}
         spacing={{ base: 8, md: 14 }}
         pb={{ base: 20, md: 36 }}
+        height={"40rem"}
       >
         <Stack align="center" direction="row" px={4}>
           <HStack mx={4}>
@@ -455,7 +454,7 @@ const ProfileDisplay = () => {
           {/* {Publications} */}
           {Skills}
           {Hobbies}
-          {Summary}
+          {/* {Summary} */}
         </ScrollSpy>
       </DarkMode>
     </>

@@ -4,6 +4,7 @@ import {
   ButtonGroup,
   Card,
   CardBody,
+  CardFooter,
   CardHeader,
   Container,
   Divider,
@@ -28,19 +29,19 @@ function CertificationCard({ certs }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const CertificateModal = (
-    <Modal isOpen={isOpen} onClose={onClose} size={"4xl"} >
+    <Modal isOpen={isOpen} onClose={onClose} size={"4xl"}>
       <ModalOverlay />
       <ModalContent>
         <ModalCloseButton />
         <ModalHeader color={"white"}>{certs.certificateName}</ModalHeader>
         <ModalBody>
           {/* <Box w={"70vw"} h={"50vh"} > */}
-            <iframe
-              title="certificate"
-              src={certs.document}
-              className="certificate"
-              frameBorder={0}
-            ></iframe>
+          <iframe
+            title="certificate"
+            src={certs.document}
+            className="certificate"
+            frameBorder={0}
+          ></iframe>
           {/* </Box> */}
         </ModalBody>
       </ModalContent>
@@ -60,7 +61,7 @@ function CertificationCard({ certs }) {
           rounded={"lg"}
           pos={"relative"}
           zIndex={1}
-          minH={"15rem"}
+          minH={"20rem"}
         >
           <CardHeader>
             <Box px={2}>
@@ -86,32 +87,34 @@ function CertificationCard({ certs }) {
                   Credentials: {certs.credentials}
                 </Text>
               )}
-              <ButtonGroup variant="ghost" isAttached size={"xs"}>
-                {certs.link && (
-                  <Button
-                    as={"a"}
-                    href={certs.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    colorScheme={COLOR_SCHEME}
-                    rightIcon={<FaExternalLinkAlt />}
-                  >
-                    Verify Credential
-                  </Button>
-                )}
+            </VStack>
+          </CardBody>
+          <CardFooter>
+            <ButtonGroup variant="ghost" isAttached size={"xs"}>
+              <Button
+                href={certs.docuemnt}
+                target="_blank"
+                rel="noopener noreferrer"
+                colorScheme={COLOR_SCHEME}
+                rightIcon={<FaFilePdf />}
+                onClick={onOpen}
+              >
+                View Certificate
+              </Button>
+              {certs.link && (
                 <Button
-                  href={certs.docuemnt}
+                  as={"a"}
+                  href={certs.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   colorScheme={COLOR_SCHEME}
-                  rightIcon={<FaFilePdf />}
-                  onClick={onOpen}
+                  rightIcon={<FaExternalLinkAlt />}
                 >
-                  View Certificate
+                  Verify Credential
                 </Button>
-              </ButtonGroup>
-            </VStack>
-          </CardBody>
+              )}
+            </ButtonGroup>
+          </CardFooter>
         </Card>
       </Box>
     </>
