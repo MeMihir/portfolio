@@ -5,27 +5,17 @@ import {
   ButtonGroup,
   Card,
   CardBody,
-  CardFooter,
-  CardHeader,
   Center,
   Container,
   DarkMode,
   Divider,
-  Flex,
   HStack,
   Heading,
-  IconButton,
   Image,
-  List,
-  ListIcon,
-  ListItem,
   Stack,
   Text,
-  Textarea,
-  VStack,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import { FaChevronRight, FaExternalLinkAlt } from "react-icons/fa";
 import { COLOR_SCHEME } from "./utils";
 import ScrollSpy from "./components/ScrollSpy";
 
@@ -35,7 +25,7 @@ import Experience from "./components/Experience";
 import Project from "./components/Project";
 import Certifications from "./components/Certifications";
 
-const { ABOUT, EDUCATION, EXPERIENCE, PROJECTS, CERTIFICATION, RESEARCH } =
+const { ABOUT, EDUCATION, EXPERIENCE, PROJECTS, CERTIFICATION } =
   DATA;
 
 const ProfileDisplay = () => {
@@ -50,8 +40,6 @@ const ProfileDisplay = () => {
   const { socials, about, programmingLanguages, tools, languages, hobbies } =
     ABOUT;
   const education = EDUCATION;
-  const publications = [];
-  const [summary, setSummary] = useState("");
   const [skillsCategory, setSkillsCategory] = useState("programmingLanguages");
   const skillsCategories = [
     {
@@ -214,76 +202,76 @@ const ProfileDisplay = () => {
     </Container>
   );
 
-  const Publications = (
-    <Container maxW={"3xl"} id="Publications">
-      <Stack
-        as={Box}
-        textAlign={"center"}
-        spacing={{ base: 8, md: 14 }}
-        pb={{ base: 20, md: 36 }}
-      >
-        <Stack align="center" direction="row" px={4}>
-          <HStack mx={4}>
-            <Text color={`${color}.400`} fontWeight={800}>
-              06
-            </Text>
-            <Text fontWeight={800}>Publications / Patents</Text>
-          </HStack>
-          <Divider orientation="horizontal" />
-        </Stack>
-        <Stack px={4} spacing={4}>
-          {publications.map((pub, index) => (
-            <Box bottom key={index}>
-              <Card variant="elevated" key={pub.paperTitle} size="sm">
-                <CardHeader>
-                  <Flex justifyContent="space-between">
-                    <HStack>
-                      {/* <Image src={pub.image} h={50} /> */}
-                      <Box px={2} align="left">
-                        <Text fontWeight={600}>{pub.paperTitle}</Text>
-                        <Text>{pub.publication}</Text>
-                      </Box>
-                    </HStack>
-                    <Text px={2} fontWeight={300}>
-                      {pub.date}
-                    </Text>
-                  </Flex>
-                </CardHeader>
-                <CardBody>
-                  <Flex>
-                    <List align="left" spacing={3}>
-                      {pub.details.map((item, index) => (
-                        <ListItem key={index}>
-                          <ListIcon
-                            boxSize={4}
-                            as={FaChevronRight}
-                            color={`${color}.500`}
-                          />
-                          {item}
-                        </ListItem>
-                      ))}
-                    </List>
-                  </Flex>
-                </CardBody>
-                <CardFooter>
-                  <IconButton
-                    // as={Link}
-                    href={pub.link}
-                    target="_blank"
-                    aria-label={`${pub.paperTitle}`}
-                    icon={<FaExternalLinkAlt />}
-                    size="xs"
-                    variant="ghost"
-                    colorScheme={COLOR_SCHEME}
-                  />
-                </CardFooter>
-              </Card>
-            </Box>
-          ))}
-        </Stack>
-      </Stack>
-    </Container>
-  );
+  // const Publications = (
+  //   <Container maxW={"3xl"} id="Publications">
+  //     <Stack
+  //       as={Box}
+  //       textAlign={"center"}
+  //       spacing={{ base: 8, md: 14 }}
+  //       pb={{ base: 20, md: 36 }}
+  //     >
+  //       <Stack align="center" direction="row" px={4}>
+  //         <HStack mx={4}>
+  //           <Text color={`${color}.400`} fontWeight={800}>
+  //             06
+  //           </Text>
+  //           <Text fontWeight={800}>Publications / Patents</Text>
+  //         </HStack>
+  //         <Divider orientation="horizontal" />
+  //       </Stack>
+  //       <Stack px={4} spacing={4}>
+  //         {publications.map((pub, index) => (
+  //           <Box bottom key={index}>
+  //             <Card variant="elevated" key={pub.paperTitle} size="sm">
+  //               <CardHeader>
+  //                 <Flex justifyContent="space-between">
+  //                   <HStack>
+  //                     {/* <Image src={pub.image} h={50} /> */}
+  //                     <Box px={2} align="left">
+  //                       <Text fontWeight={600}>{pub.paperTitle}</Text>
+  //                       <Text>{pub.publication}</Text>
+  //                     </Box>
+  //                   </HStack>
+  //                   <Text px={2} fontWeight={300}>
+  //                     {pub.date}
+  //                   </Text>
+  //                 </Flex>
+  //               </CardHeader>
+  //               <CardBody>
+  //                 <Flex>
+  //                   <List align="left" spacing={3}>
+  //                     {pub.details.map((item, index) => (
+  //                       <ListItem key={index}>
+  //                         <ListIcon
+  //                           boxSize={4}
+  //                           as={FaChevronRight}
+  //                           color={`${color}.500`}
+  //                         />
+  //                         {item}
+  //                       </ListItem>
+  //                     ))}
+  //                   </List>
+  //                 </Flex>
+  //               </CardBody>
+  //               <CardFooter>
+  //                 <IconButton
+  //                   // as={Link}
+  //                   href={pub.link}
+  //                   target="_blank"
+  //                   aria-label={`${pub.paperTitle}`}
+  //                   icon={<FaExternalLinkAlt />}
+  //                   size="xs"
+  //                   variant="ghost"
+  //                   colorScheme={COLOR_SCHEME}
+  //                 />
+  //               </CardFooter>
+  //             </Card>
+  //           </Box>
+  //         ))}
+  //       </Stack>
+  //     </Stack>
+  //   </Container>
+  // );
 
   const Skills = (
     <Container maxW={"3xl"} id="Skills">
@@ -408,29 +396,29 @@ const ProfileDisplay = () => {
     </Container>
   );
 
-  const Summary = (
-    <Container maxW={"3xl"} id="Summary">
-      <Stack
-        as={Box}
-        textAlign={"center"}
-        spacing={{ base: 8, md: 14 }}
-        pb={{ base: 20, md: 36 }}
-      >
-        <Stack align="center" direction="row" px={4}>
-          <HStack mx={4}>
-            <Text color={`${color}.400`} fontWeight={800}>
-              09
-            </Text>
-            <Text fontWeight={800}>Summary</Text>
-          </HStack>
-          <Divider orientation="horizontal" />
-        </Stack>
-        <Stack px={4} spacing={4}>
-          <Textarea readOnly minH={"20rem"} maxH={"20rem"} value={summary} />
-        </Stack>
-      </Stack>
-    </Container>
-  );
+  // const Summary = (
+  //   <Container maxW={"3xl"} id="Summary">
+  //     <Stack
+  //       as={Box}
+  //       textAlign={"center"}
+  //       spacing={{ base: 8, md: 14 }}
+  //       pb={{ base: 20, md: 36 }}
+  //     >
+  //       <Stack align="center" direction="row" px={4}>
+  //         <HStack mx={4}>
+  //           <Text color={`${color}.400`} fontWeight={800}>
+  //             09
+  //           </Text>
+  //           <Text fontWeight={800}>Summary</Text>
+  //         </HStack>
+  //         <Divider orientation="horizontal" />
+  //       </Stack>
+  //       <Stack px={4} spacing={4}>
+  //         <Textarea readOnly minH={"20rem"} maxH={"20rem"} value={summary} />
+  //       </Stack>
+  //     </Stack>
+  //   </Container>
+  // );
 
   return (
     <>
@@ -445,6 +433,7 @@ const ProfileDisplay = () => {
             email={email}
             socials={socials}
             phone={phone}
+            location={location}
           />
           {About}
           <Experience experience={EXPERIENCE} />

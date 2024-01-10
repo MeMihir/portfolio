@@ -23,7 +23,8 @@ import {
   FaPhone,
   FaTwitter,
 } from "react-icons/fa";
-import { ROLES } from "../utils";
+import { FaLocationDot } from "react-icons/fa6";
+import { COLOR_SCHEME, ROLES } from "../utils";
 
 export default function Hero({
   firstName,
@@ -33,6 +34,7 @@ export default function Hero({
   email,
   phone,
   socials,
+  location,
 }) {
   const Arrow = createIcon({
     displayName: "Arrow",
@@ -189,6 +191,16 @@ export default function Hero({
                     />
                   )}
                 </ButtonGroup>
+                <Text fontSize={"lg"} fontWeight={300}>
+                  <Icon
+                    as={FaLocationDot}
+                    color={"gray.500"}
+                    fontSize={"xl"}
+                    textColor={`${COLOR_SCHEME}.400`}
+                    mr={2}
+                  />
+                  {location}
+                </Text>
               </VStack>
             </Box>
           </Stack>
