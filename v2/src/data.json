@@ -5,18 +5,20 @@
       "github": "https://github.com/MeMihir",
       "linkedin": "https://www.linkedin.com/in/mihir-pavuskar-658337139",
       "kaggle": "https://www.kaggle.com/mihirpavuskar",
-      "portfolio": "mihip.netlify.app"
-		},
-		"resume": "",
-		"programmingLanguages": [
-			"C++",
-			"JavaScript",
-			"TypeScript",
-			"Python",
-			"Go",
-			"HTML",
-			"CSS"
-		],
+      "portfolio": "https://mihirp.netlify.app"
+    },
+    "resume": "",
+    "programmingLanguages": [
+      "C++",
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "SQL",
+      "Go",
+      "HTML",
+      "CSS",
+      "Shell"
+    ],
     "tools": [
       "Deep Learning",
       "Computer Vision",
@@ -24,7 +26,6 @@
       "Data Visualization",
       "NLP",
       "Big Data",
-      "",
       "Artificial Intelligence",
       "Machine Learning",
       "Databases",
@@ -33,8 +34,35 @@
       "Data Structures",
       "Algorithms",
       "Tensorflow",
+      "PyTorch",
       "AWS",
-      ""
+      "Scikit-Learn",
+      "Pandas",
+      "Plotly",
+      "MongoDB",
+      "MySQL",
+      "PostgreSQL",
+      "Git",
+      "Docker",
+      "CI/CD",
+      "Linux",
+      "Windows",
+      "MacOS",
+      "Firebase",
+      "Google Cloud",
+      "Heroku",
+      "Vercel",
+      "Netlify",
+      "ChakraUI",
+      "MaterialUI",
+      "Bootstrap",
+      "TailwindCSS",
+      "Framer Motion",
+      "NextJS",
+      "GatsbyJS",
+      "ExpressJS",
+      "Flask",
+      "AWS"
     ],
     "languages": [
       "English",
@@ -43,7 +71,7 @@
       "Konkani",
       "French",
       "Kannada"
-		],
+    ],
     "hobbies": [
       "Comedy Sketches",
       "Stand-up Comedy",
@@ -56,7 +84,7 @@
   "EDUCATION": [
     {
       "universityName": "University of Southern California",
-      "degree": "Master of Science in Computer Science (Artificial Intelligence) ",
+      "degree": "Master of Science in Computer Science",
       "location": "Los Angeles, California, USA",
       "fromDate": "Jan 2023",
       "toDate": "Dec 2024",
@@ -71,16 +99,17 @@
       "fromDate": "May 2018",
       "toDate": "Jul 2022",
       "grading": "CGPA",
-      "score": "9.24",
+      "score": "3.8",
       "logo": "vitlogo"
     }
   ],
   "EXPERIENCE": [
     {
       "companyName": "Murf AI",
-      "role": "Software Developer",
+      "role": "Software Developer Frontend",
+      "location": "Bangalore, Karnataka, India",
       "fromDate": "Sep 2022",
-			"toDate": "Dec 2024",
+      "toDate": "Dec 2024",
       "tools": [
         "ReactJS",
         "Framer Motion",
@@ -90,23 +119,24 @@
         "AWS"
       ],
       "details": [
-        "Developed critical features in the video/audio editing studio",
-        "Upgraded Google Analytics from GA3 to GA4.",
-        "Handled user migration to a newer version of the software",
-        "Optimized performance for heavy usage of the software"
+        "Implemented critical features in video/audio editing studio to enhance usability and make interface user-friendly.",
+        "Analyzed Google Analytics logs to identify and resolve bugs and devise fail-safes reducing crash rates by 40%.",
+        "Optimized studio for data intensive projects by applying UI virtualization and modifying data flow across ReactJS components and Redux making app 5 times faster.",
+        "Collaborated with Customer Success team to upgrade Google Analytics to GA4 while maintaining data consistency."
       ],
       "certificate": "",
-      "links": [
-        "https://murf.ai/",
-        "https://www.linkedin.com/company/murf-ai",
-        "https://www.instagram.com/murfaistudio/"
-      ]
+      "links": {
+        "website": "https://murf.ai/",
+        "linkedin": "https://www.linkedin.com/company/murf-ai",
+        "instagram": "https://www.instagram.com/murfaistudio/"
+      }
     },
     {
       "companyName": "Deakin University",
-      "role": "Visiting Researcher",
+      "location": "Geelong, Victoria, Australia",
+      "role": "Natural Language Processing Researcher",
       "fromDate": "Feb 2022",
-			"toDate": "Jul 2022",
+      "toDate": "Jul 2022",
       "tools": [
         "Artificial Intelligence (AI)",
         "Deep Learning",
@@ -119,40 +149,41 @@
         "Python"
       ],
       "details": [
-        "Developed an NLP Question Answering model for tabular and paragraph based financial data under Dr. Chetan Arora",
-        "Worked with several advanced models like AlBERT, TaPaS, ELECTRA, etc",
-        "Achieved high accuracy with the model developed on benchmark QA datasets."
+        "Developed an end-to-end Question Answering model for structured and unstructured financial data under Dr. Chetan Arora",
+        "Researched best models such as TaPaS, AlBERT, HybridR, TagOp for each question type and finetuned models on FinQA, financial dataset and HybridQA, hybrid datasets consisting of both tables and paragraphs.",
+        "Combined various models to create an ensemble model achieve state-of-the-art accuracies on benchmark financial datasets such as FinQA, TAT-QA and test financial documents."
       ],
       "certificate": "",
-      "links": [
-        "https://www.deakin.edu.au/",
-        "https://www.linkedin.com/school/deakin-university/"
-      ]
+      "links": {
+        "website": "https://www.deakin.edu.au/",
+        "linkedin": "https://www.linkedin.com/school/deakin-university/"
+      }
     },
     {
       "companyName": "Velozity Global Solutions India Pvt. Ltd.",
-      "role": "Full-Stack Developer",
-			"fromDate": "Jan 2022",
-			"toDate": "Apr 2022",
+      "role": "Full Stack Software Developer Intern",
+      "location": "Chennai, Tamil Nadu, India",
+      "fromDate": "Jan 2022",
+      "toDate": "Apr 2022",
       "tools": ["NodeJS", "ReactJS", "NextJS", "NESTJS", "ChakraUI"],
       "details": [
-        "Worked on both frontend and backend development of several projects",
-        "Collaborated with over seven other while working on the projects.",
-        "Worked with several technologies like ReactJS, NodeJS, NextJS, NestJS, ChakraUI, ReactStrap, etc.",
-        "Developed ECG monitoring interface, Business landing websites and demonstration webapps."
+        "Overhauled ECG monitoring dashboard by migrating from legacy code to NextJS boosting performance and ease-of-use.",
+        "Visualized large amounts of patient data through multiple graphs through customized library built on top of ReactCanvas.",
+        "Developed patient progress interface for doctors in React enabling multiple patients tracking simultaneously."
       ],
       "certificate": "",
-      "links": [
-        "https://velozityglobal.com/",
-        "https://www.linkedin.com/company/velozity-global-solutions/",
-        "https://www.instagram.com/velozityglobalsolutions/"
-      ]
+      "links": {
+        "website": "https://velozityglobal.com/",
+        "linkedin": "https://www.linkedin.com/company/velozity-global-solutions/",
+        "instagram": "https://www.instagram.com/velozityglobalsolutions/"
+      }
     },
     {
       "companyName": "Samsung PRISM",
-      "role": "Research Intern",
-			"fromDate": "Jul 2020",
-			"toDate": "Mar 2021",
+      "role": "Student Research Intern ",
+      "location": "Bangalore, Karnataka, India",
+      "fromDate": "Jul 2020",
+      "toDate": "Mar 2021",
       "tools": [
         "Natrual Language Processing",
         "ASR",
@@ -161,64 +192,130 @@
         "BERT"
       ],
       "details": [
-        "Develop an Intelligent Text Normalization for ASR systems that would be used in SAMSUNG products in the future.",
-        "Worked with advanced technologies such as BERT networks and XgBoost models.",
-        "Were able to achieve 99.7% accuracy with the proposed model."
+        "Designed an Intelligent Text Normalization model for Automatic Speech Recognition systems used in Samsung products by leveraging XgBoost and BERT based language models and achieved accuracy of 99.7%.",
+        "Generated slangs dataset by scraping popular slang dictionaries and trained light-weight language models such as AlBERT to normalize slang language by improving model accuracy by 4.4%."
       ],
       "certificate": "https://drive.google.com/file/d/1j3iptqVeNHZrhsGVZDNjb5Pp2_muSpoD/view?usp=sharing",
-      "links": [
-        "https://www.samsungprism.com/",
-        "https://www.linkedin.com/company/samsung-india/"
-      ]
+      "links": {
+        "website": "https://www.samsungprism.com/",
+        "linkedin": "https://www.linkedin.com/company/samsung-india/"
+      }
     }
   ],
   "PROJECTS": [
     {
+      "projectName": "MorphVLM: Fine-tuning Large Multimodal Language Models on niche Domains",
+      "tags": ["aiml", "data"],
+      "tools": [
+        "Natural Language Processing (NLP)",
+        "Computer Vision",
+        "Large Language Models",
+        "Multimodal Language Models",
+        "Deep Learning",
+        "Machine Learning",
+        "Artificial Intelligence (AI)",
+        "Python",
+        "PyTorch",
+        "BERT",
+        "GPT",
+        "LLaMA",
+        "Mosaic MPT",
+        "CLIP ViT"
+      ],
+      "details": [
+        "Spearheaded project to advance performance and adaptability of VLMs on niche domains by substituting vision-language components with pre-trained LLMs such as BERT, GPT, LLaMA, Mosaic MPT, and CLIP ViT.",
+        "Executed fine-tuning of Flamingo model through LoRA method on A-OKVQA and Pubmed datasets to attain 45.5% accuracy on VQAv2 dataset with minimal resource consumption, 60% smaller model size and 3 times faster convergence."
+      ],
+      "links": {
+        "github": "https://github.com/MeMihir/Pente"
+      }
+    },
+    {
+      "projectName": "Resume AI",
+      "tags": ["aiml", "soft"],
+      "tools": ["ReactJS", "NextJS", "Firebase", "Vercel", "ChakraUI", "AI"],
+      "details": [
+        "An app that creates speacilized resumes and cover letters for job applications using AI based on the job description and user profile.",
+        "Leveraged Vercel-AI API and text-streaming to generate resumes and cover letters given user profile and job description.",
+        "Designed user-friendly resume editor and management dashboard with NextJS and ChakraUI via and deployed to Vercel.",
+        "Attained scalability, security, and reliability through Firebase for data storage and authentication and git CI/CD pipelines."
+      ],
+      "links": {
+        "github": "https://github.com/MeMihir/Pente"
+      }
+    },
+    {
       "projectName": "Intelligent Pente Playing Agent",
-      "description": "An Intelligent agent which plays the game Pente, a stratergy board game played on a 19x19 board. Built using C++ and utilizes Alpha-Beta Pruning",
+      "tags": ["aiml"],
       "tools": [
         "C++",
         "Artificial Intelligence",
         "Alpha-Beta Pruning",
         "Algorithms"
       ],
-      "details": ["An Intelligent agent which plays the game Pente, a stratergy board game played on a 19x19 board. Built using C++ and utilizes Alpha-Beta Pruning"],
-      "links": ["https://github.com/MeMihir/Pente"]
+      "details": [
+        "An Intelligent agent which plays the game Pente, a stratergy board game played on a 19x19 board. Built using C++ and utilizes Alpha-Beta Pruning",
+        "Implemented leveraging alpha-beta pruning algorithm running at depth 5 with C++ capable of defeating Random, Minimax and Level 1 agent on pente.org.",
+        "Improved performance by reducing search space and through optimizations like Forward Pruning, Move Ordering, etc."
+      ],
+      "links": {
+        "github": "https://github.com/MeMihir/Pente"
+      }
     },
     {
       "projectName": "Smart Checkout System",
-      "description": "A smart checkout system inspired by the Amazon Go store, coupled with inventory management and a sales prediction system.",
-      "tools": ["LSTM", "ReactJS", "NodeJS", "Docker"],
-      "details": ["A smart checkout system inspired by the Amazon Go store, coupled with inventory management and a sales prediction system."],
-      "links": [
-        "https://github.com/umangraval/Smart-Checkout",
-        "https://smartcheckout.mihirp.me/"
-      ]
+      "tags": ["soft"],
+      "tools": [
+        "LSTM",
+        "ReactJS",
+        "NodeJS",
+        "Docker",
+        "CI/CD",
+        "AWS",
+        "MongoDB"
+      ],
+      "details": [
+        "A smart checkout system inspired by the Amazon Go store, coupled with inventory management and a sales prediction system.",
+        "Deployed using ReactJS and NodeJS in a docker environment hosted via AWS EC2 instances.",
+        "Used MongoDB for data storage and LSTM sales prediction model to predict future sales by considering past sales data."
+      ],
+      "links": {
+        "github": "https://github.com/umangraval/Smart-Checkout",
+        "website": "https://smartcheckout.mihirp.me/"
+      }
     },
     {
       "projectName": "COVID Visualizer",
-      "description": "A COVID data visualization dashboard that presented the information in several different graphical formats gave us a deeper insight into the spread of the virus.",
+      "tags": ["data"],
       "tools": ["Pandas", "Plotly", "Plotly-Dash"],
-      "details": ["A COVID data visualization dashboard that presented the information in several different graphical formats gave us a deeper insight into the spread of the virus."],
-      "links": [
-        "https://github.com/MeMihir/nCoViD-Viz",
-        "https://ncovidviz.herokuapp.com/",
-        "https://colab.research.google.com/drive/1TfThC2IGlJFI8acCfQdlX42L8uONm5lv?usp=sharing"
-      ]
+      "details": [
+        "A COVID data visualization dashboard that presented the information in several different graphical formats gave us a deeper insight into the spread of the virus.",
+        "Visualized the spread of the virus through time-series based geographical plots and epidemiology graphs using plotly.",
+        "Analyzed the economic effects by juxtaposing cases with current and past stock prices of different industries on spread plot."
+      ],
+      "links": {
+        "github": "https://github.com/MeMihir/nCoViD-Viz",
+        "website": "https://ncovidviz.herokuapp.com/",
+        "colab": "https://colab.research.google.com/drive/1TfThC2IGlJFI8acCfQdlX42L8uONm5lv?usp=sharing"
+      }
     },
     {
       "projectName": "See Food",
-      "description": "Shazam for Food, can identify and classify up to 500 dishes using uploaded or live pictures",
+      "tags": ["aiml", "soft", "data"],
       "tools": ["Tensorflow", "TFJS", "ReactJS", "OpenCV"],
-      "details": ["Shazam for Food, can identify and classify up to 500 dishes using uploaded or live pictures"],
-      "links": [
-        "https://github.com/MeMihir/SeeFood",
-        "https://see-food.netlify.app/",
-        "https://colab.research.google.com/drive/1KYUqaFV_MTbGydyuexiQ5aWbNvjxRQE1?usp=sharing"
-      ]
+      "details": [
+        "Shazam for Food, can identify and classify up to 500 dishes using uploaded or live pictures",
+        "Utilized TensorFlow ResNet model achieving 82.7% accuracy and converted to TensorflowJS model for deployment."
+      ],
+      "links": {
+        "github": "https://github.com/MeMihir/SeeFood",
+        "website": "https://see-food.netlify.app/",
+        "colab": "https://colab.research.google.com/drive/1KYUqaFV_MTbGydyuexiQ5aWbNvjxRQE1?usp=sharing"
+      }
     },
     {
       "projectName": "FOL Reslover",
+      "tags": ["rest"],
       "description": "An Intelligent First Order Logic Evaluator using Unit Resolution Algorithm.",
       "tools": [
         "C++",
@@ -226,29 +323,47 @@
         "First Order Logic",
         "Algorithms"
       ],
-      "details": ["An Intelligent First Order Logic Evaluator using Unit Resolution Algorithm."],
-      "links": ["https://github.com/MeMihir/FOL-Resolver"]
+      "details": [
+        "An Intelligent First Order Logic Evaluator using Unit Resolution Algorithm."
+      ],
+      "links": {
+        "github": "https://github.com/MeMihir/FOL-Resolver"
+      }
     },
     {
       "projectName": "SQL to NoSQL Database Converter",
-      "description": "A tool to migrate for SQL databases such as MySQL, MSSQL and PostgreSQL to NoSQL databases such as MongoDB",
+      "tags": ["data"],
       "tools": ["MySQL", "MSSQL", "PostgreSQL", "MongoDB", "NodeJS"],
-      "details": ["A tool to migrate for SQL databases such as MySQL, MSSQL and PostgreSQL to NoSQL databases such as MongoDB"],
-      "links": ["https://github.com/MeMihir/SQL_to_NoSQL"]
+      "details": [
+        "A tool to migrate for SQL databases such as MySQL, MSSQL and PostgreSQL to NoSQL databases such as MongoDB"
+      ],
+      "links": {
+        "github": "https://github.com/MeMihir/SQL_to_NoSQL"
+      }
     },
     {
       "projectName": "Master Gesture",
+      "tags": ["rest"],
       "description": "A hand gesture-based mouse control and swipe gesture-based text input system.",
       "tools": ["OpenCV", "Tensorflow", "XGBoost"],
-      "details": ["A hand gesture-based mouse control and swipe gesture-based text input system."],
-      "links": ["https://github.com/MeMihir/MasterGestures"]
+      "details": [
+        "A hand gesture-based mouse control and swipe gesture-based text input system."
+      ],
+      "links": {
+        "github": "https://github.com/MeMihir/MasterGestures"
+      }
     },
     {
       "projectName": "Automated Vulnerability Assessment and Attack",
+      "tags": ["rest"],
       "description": "An easy to use tool which can be used for passive information gathering, vulnerability assessment and exploitation. An integration of multiple common information and cyber security tools. Can be used to test own website and as an learning tool for newer infosec enthusiasts.",
       "tools": ["nmap", "wapiti", "nikto", "SQLMap", "metasploit"],
-      "details": ["An easy to use tool which can be used for passive information gathering, vulnerability assessment and exploitation. An integration of multiple common information and cyber security tools. Can be used to test own website and as an learning tool for newer infosec enthusiasts."],
-      "links": ["https://github.com/MeMihir/AutoVulTack"]
+      "details": [
+        "An easy to use tool which can be used for passive information gathering, vulnerability assessment and exploitation. An integration of multiple common information and cyber security tools. Can be used to test own website and as an learning tool for newer infosec enthusiasts."
+      ],
+      "links": {
+        "github": "https://github.com/MeMihir/AutoVulTack"
+      }
     }
   ],
   "CERTIFICATION": [
@@ -263,32 +378,39 @@
         "Computer Vision",
         "Natural Language Processing"
       ],
-      "link": "/certificates/DeepLearning.pdf",
-			"dateIssued": "Jan"
+      "document": "/certificates/DeepLearning.pdf",
+      "dateIssued": "Jun 2020",
+      "credentials": "QMV95NA36A3W",
+      "link": "https://coursera.org/verify/QMV95NA36A3W"
     },
     {
       "certificateName": "AWS - Cloud Practitioner",
       "institution": "Amazon Web Services",
       "description": "This credential helps organizations identify and develop talent with critical knowledge related to implementing cloud initiatives. Earning AWS Certified Cloud Practitioner validates cloud fluency and foundational AWS knowledge.",
       "tools": ["AWS", "Cloud Computing"],
-      "link": "/certificates/AWS_UPLOAD.pdf",
-			"dateIssued": "Jan"
+      "document": "/certificates/AWS_UPLOAD.pdf",
+      "dateIssued": "August 2021",
+      "dateExpires": "August 2024",
+      "credentials": "EBT4G4WJEMV117GB",
+      "link": "https://aw.certmetrics.com/amazon/public/verification.aspx"
     },
     {
       "certificateName": "Python Data Visualization",
       "institution": "Coursera - Rice University",
       "description": "This specialization is intended for beginners who would like to master essential data visualization skills",
       "tools": ["Data Science", "Data Visualization", "Plotly"],
-      "link": "/certificates/DataViz.pdf",
-			"dateIssued": "Jan"
+      "document": "/certificates/DataViz.pdf",
+      "dateIssued": "Jun 2020",
+      "credentials": "FGJQREHKDTB6",
+      "link": "https://coursera.org/verify/FGJQREHKDTB6"
     },
     {
       "certificateName": "NOS - Security Analyst",
       "institution": "NASSCOM",
       "description": "This specialization is intended for beginners who would like to master essential data visualization skills",
       "tools": ["Information Security", "Cyber Security", "Ethical Hacking"],
-      "link": "/certificates/NASSCOM.pdf",
-			"dateIssued": "Jan"
+      "document": "/certificates/NASSCOM.pdf",
+      "dateIssued": "Jan"
     }
   ],
   "RESEARCH": []
