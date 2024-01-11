@@ -1,0 +1,44 @@
+{
+    "bio": "Currently pursuing MS in Computer Science (Artificial Intelligence) at the University of Southern California with a GPA of 4.0. Have extensive expertise in Machine Learning, Artificial Intelligence, and Software Development. Have work experience as SDE (React), Researcher (NLP). Have built several projects using technologies like Computer Vision, NLP, Tensorflow, PyTorch, Reach, NodeJS, etc.",
+    "links": [
+        "https://github.com/MeMihir",
+        "https://www.linkedin.com/in/mihir-pavuskar-658337139",
+        "https://www.kaggle.com/mihirpavuskar",
+        "./Mihir_Resume.pdf"
+    ],
+    "skills": [
+        "Deep Learning",
+        "Computer Vision",
+        "Data Science",
+        "Data Visualization",
+        "NLP",
+        "Big Data",
+        "",
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Databases",
+        "Node.js",
+        "ReactJS",
+        "Data Structures",
+        "Algorithms",
+        "Tensorflow",
+        "AWS",
+        ""
+    ],
+    "languages": {
+        "English": 9,
+        "Hindi": 7,
+        "Marathi": 7,
+        "Konkani": 7,
+        "French": 5,
+        "Kannada": 3
+    },
+    "hobbies": [
+        "Comedy Sketches",
+        "Stand-up Comedy",
+        "Table Tennies",
+        "Chess",
+        "Reading",
+        "Video Games"
+    ]
+}

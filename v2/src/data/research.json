@@ -1,0 +1,29 @@
+[
+    {
+        "title" : "Hand-gesture swipe keyboard text input system",
+        "status" : "Communicated",
+        "journal" : "",
+        "description" : "",
+        "keywords" : ["Computer Vision", "Human Computer Interaction", "Augmented Reality"],
+        "detailed" : "Hand gesture-based text input systems are inefficient and difficult for humans to execute. They require a lot of time to input simple texts or may even need the user to learn certain sign languages to interact with the system. To address these issues, we propose a hand gesture-based swipe keyboard system. This paper implements the said methodology and compares it with the existing prevalent technique of text input.",
+        "links" : ["https://github.com/MeMihir/MasterGestures"]
+    },
+    {
+        "title" : "Slang Preprocessing Model",
+        "status" : "In Progress",
+        "journal" : "",
+        "description" : "",
+        "keywords" : ["Natural Language Processing", "Deep Learning"],
+        "detailed" : "Preprocessing slang text is a major issue. Most of the models are pretrained on clean and preprocessed datasets which do not contain slang and spelling errors. Moreover, even training a new model from scratch is an issue when it comes to slang as most of the datasets do not contain them. This issue then ripples out to other natural language processing tasks such as sentiment analysis, ASR systems, text summarizers, etc. To deal with this issue we propose a slang preprocessing model which will preprocess the slang and spelling errors with appropriate replacement and correction algorithms. The output of this model can then be utilized in other NLP related applications.",
+        "links" : []
+    },
+    {
+        "title" : "Image Compression and Super Resolution",
+        "status" : "In Progress",
+        "journal" : "",
+        "description" : "",
+        "keywords" : ["Computer Vision", "Super Resolution", "Compression"],
+        "detailed" : "This paper sought to combine the power and efficiency of Boosting Algorithms such as XgBoost, CatBoost, etc. with the versatility of GAN Architechtures to produce BoostingGANs, which will be efficient in analyzing tabular datasets",
+        "links" : []
+    }
+]

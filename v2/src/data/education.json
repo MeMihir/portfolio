@@ -1,0 +1,42 @@
+[
+    {
+        "institution": "University of Southern California",
+        "level" : "Master of Science in Computer Science (Artificial Intelligence) ",
+        "location": "Los Angeles, California, USA",
+        "from": "January 2023",
+        "to": "December 2024",
+        "grading": "GPA",
+        "grade": "4.0",
+        "logo": "usclogo"
+    },
+    {
+        "institution": "Vellore Institute of Technology",
+        "level" : "B.Tech. in Computer Science and Engineering",
+        "location": "Vellore, Tamil Nadu, India",
+        "from": "May 2018",
+        "to": "July 2022",
+        "grading": "CGPA",
+        "grade": "9.24",
+        "logo": "vitlogo"
+    },
+    {
+        "institution": "Mushtifund Aryaans",
+        "level" : "High School",
+        "location": "Goa, India",
+        "from": "May 2016",
+        "to": "March 2018",
+        "grading": "Percentage",
+        "grade": "88.6",
+        "logo": "aryaanslogo"
+    },
+    {
+        "institution": "Bhatikar Model High School",
+        "level" : "School",
+        "location": "Goa, India",
+        "from": "June 2006",
+        "to": "March 2016",
+        "grading": "Percentage",
+        "grade": "88.9%",
+        "logo": "bmhslogo"
+    }
+]
