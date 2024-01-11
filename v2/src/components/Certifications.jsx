@@ -29,20 +29,18 @@ function CertificationCard({ certs }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const CertificateModal = (
-    <Modal isOpen={isOpen} onClose={onClose} size={"4xl"}>
+    <Modal isOpen={isOpen} onClose={onClose} size={["xs", "xs", "4xl", "4xl"]}>
       <ModalOverlay />
       <ModalContent>
         <ModalCloseButton />
         <ModalHeader color={"white"}>{certs.certificateName}</ModalHeader>
         <ModalBody>
-          {/* <Box w={"70vw"} h={"50vh"} > */}
           <iframe
             title="certificate"
             src={certs.document}
             className="certificate"
             frameBorder={0}
           ></iframe>
-          {/* </Box> */}
         </ModalBody>
       </ModalContent>
     </Modal>
@@ -51,7 +49,7 @@ function CertificationCard({ certs }) {
   return (
     <>
       {CertificateModal}
-      <Box bottom w={"45%"} mx={"1.5%"}>
+      <Box bottom w={["100%", "100%", "45%", "45%"]} mx={"1.5%"}>
         <Card
           role={"group"}
           maxW={"330px"}
@@ -89,8 +87,8 @@ function CertificationCard({ certs }) {
               )}
             </VStack>
           </CardBody>
-          <CardFooter>
-            <ButtonGroup variant="ghost" isAttached size={"xs"}>
+          <CardFooter px={[2, 2, 0, 2]} >
+            <ButtonGroup variant="ghost" isAttached size={"xs"} w={"100%"} justifyContent={"space-around"} >
               <Button
                 href={certs.docuemnt}
                 target="_blank"

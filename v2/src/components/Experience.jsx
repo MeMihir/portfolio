@@ -58,6 +58,7 @@ export default function Experience({ experience }) {
                     <Box px={2} align="left">
                       <Text fontWeight={600}>{exp.role}</Text>
                       <Button
+                        overflowWrap={"break-word"}
                         variant="link"
                         colorScheme={COLOR_SCHEME}
                         rightIcon={<GoLinkExternal />}

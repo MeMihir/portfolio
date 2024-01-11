@@ -54,19 +54,24 @@ export default function Hero({
       maxW={"100vw"}
       id="Home"
       height={"100vh"}
-      marginLeft={"-5%"}
-      mr={0}
+      marginLeft={[0, 0, "-5%", "-5%"]}
       p={5}
     >
-      <HStack justifyContent={"space-around"} w={"100%"}>
-        <Image src="/profile.jpg" w="45%" />
+      <HStack
+        justifyContent={["center", "center", "center", "space-around"]}
+        w={"100%"}
+        h={"100%"}
+        flexDir={["column", "column", "column", "row"]}
+        mt={2}
+      >
+        <Image src="/profile.jpg" w={["80%", "80%", "45%", "45%"]} />
         <Stack
           w={"100%"}
           as={Box}
           textAlign={"center"}
           spacing={{ base: 8, md: 14 }}
-          pb={{ base: 20, md: 36 }}
-          pt={{ base: 36, md: 52 }}
+          pb={[10, 10, 20, 20]}
+          pt={[10, 10, 20, 20]}
         >
           <Heading
             fontWeight={600}
@@ -85,13 +90,17 @@ export default function Hero({
             alignSelf={"center"}
             position={"relative"}
           >
-            <ButtonGroup colorScheme={color}>
+            <ButtonGroup
+              colorScheme={color}
+              flexDir={["column-reverse", "column-reverse", "row", "row"]}
+              size={["md", "md", "lg", "lg"]}
+            >
               <Button
                 px={6}
+                m={1}
                 rounded={"full"}
                 variant={"outline"}
                 as={Link}
-                // remove spl characters from role and take first 4 chars
                 href={`resumes/MihirMangeshPavuskar${role}.pdf`}
                 target="_blank"
               >

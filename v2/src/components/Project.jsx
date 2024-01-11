@@ -38,47 +38,8 @@ function ProjectCard({ project }) {
       <CardHeader>
         <VStack>
           <HStack justifyContent={"space-between"} w={"100%"}>
-            <Box px={2} align="left">
+            <Box px={2} align="left" maxW={"70%"}>
               <Text fontWeight={600}>{project.projectName}</Text>
-              <HStack>
-                {project.links.github && (
-                  <Button
-                    as={Link}
-                    href={project.links.github}
-                    target="_blank"
-                    variant="link"
-                    colorScheme={COLOR_SCHEME}
-                    leftIcon={<FaGithub />}
-                  >
-                    Github
-                  </Button>
-                )}
-                |
-                {project.links.website && (
-                  <Button
-                    as={Link}
-                    href={project.links.website}
-                    target="_blank"
-                    variant="link"
-                    colorScheme={COLOR_SCHEME}
-                    leftIcon={<FaGlobeAmericas />}
-                  >
-                    Website
-                  </Button>
-                )}
-                {project.links.colab && (
-                  <Button
-                    as={Link}
-                    href={project.links.colab}
-                    target="_blank"
-                    variant="link"
-                    colorScheme={COLOR_SCHEME}
-                    leftIcon={<SiGooglecolab />}
-                  >
-                    Google Colab
-                  </Button>
-                )}
-              </HStack>
             </Box>
             <Box>
               <Text px={2} fontWeight={300}>
@@ -87,6 +48,44 @@ function ProjectCard({ project }) {
               </Text>
             </Box>
           </HStack>
+          <ButtonGroup justifyContent={"start"} w={"100%"} >
+            {project.links.github && (
+              <Button
+                as={Link}
+                href={project.links.github}
+                target="_blank"
+                variant="link"
+                colorScheme={COLOR_SCHEME}
+                leftIcon={<FaGithub />}
+              >
+                Github
+              </Button>
+            )}
+            {project.links.website && (
+              <Button
+                as={Link}
+                href={project.links.website}
+                target="_blank"
+                variant="link"
+                colorScheme={COLOR_SCHEME}
+                leftIcon={<FaGlobeAmericas />}
+              >
+                Website
+              </Button>
+            )}
+            {project.links.colab && (
+              <Button
+                as={Link}
+                href={project.links.colab}
+                target="_blank"
+                variant="link"
+                colorScheme={COLOR_SCHEME}
+                leftIcon={<SiGooglecolab />}
+              >
+                Google Colab
+              </Button>
+            )}
+          </ButtonGroup>
         </VStack>
       </CardHeader>
       <CardBody>
@@ -172,7 +171,10 @@ export default function Project({ projects, role }) {
           <Divider orientation="horizontal" />
         </Stack>
         <Center>
-          <ButtonGroup variant="outline" alignItems={"end"}>
+          <ButtonGroup
+            variant="outline"
+            flexDir={["column", "column", "row", "row"]}
+          >
             {Object.keys(CATEGORIES).map((cat, index) => (
               <Button
                 key={index}

@@ -76,14 +76,6 @@ const ProfileDisplay = () => {
     setRole(roles[role_path] || "soft");
   }, []);
 
-  const Starts = (
-    <>
-      <div id="starts"></div>
-      <div id="starts2"></div>
-      <div id="starts3"></div>
-    </>
-  );
-
   const About = (
     <Container maxW={"3xl"} id="About">
       <Stack
@@ -125,7 +117,7 @@ const ProfileDisplay = () => {
           </HStack>
           <Divider orientation="horizontal" />
         </Stack>
-        <HStack px={4} spacing={4}>
+        <HStack px={4} spacing={4} flexDir={["column", "column", "row", "row"]} > 
           {education.map((edu, index) => (
             <Card
               role={"group"}
@@ -137,6 +129,7 @@ const ProfileDisplay = () => {
               rounded={"lg"}
               pos={"relative"}
               zIndex={1}
+              mt={2}
             >
               <CardBody
                 rounded={"lg"}
@@ -280,7 +273,7 @@ const ProfileDisplay = () => {
         textAlign={"center"}
         spacing={{ base: 8, md: 14 }}
         pb={{ base: 20, md: 36 }}
-        height={"40rem"}
+        minHeight={"40rem"}
       >
         <Stack align="center" direction="row" px={4}>
           <HStack mx={4}>
@@ -423,7 +416,6 @@ const ProfileDisplay = () => {
   return (
     <>
       <DarkMode className="darkBG">
-        {Starts}
         <ScrollSpy items={sectionItems} offset={50}>
           <Hero
             firstName={firstName}
