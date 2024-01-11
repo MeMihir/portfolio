@@ -92,7 +92,7 @@ export default function Hero({
                 variant={"outline"}
                 as={Link}
                 // remove spl characters from role and take first 4 chars
-                href={`resumes/${role}.pdf`}
+                href={`resumes/MihirMangeshPavuskar${role}.pdf`}
                 target="_blank"
               >
                 {"Open Resume"}
