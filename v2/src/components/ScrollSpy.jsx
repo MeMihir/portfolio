@@ -5,37 +5,37 @@ import { COLOR_SCHEME } from "../utils";
 const ScrollSpy = ({ items, offset = 0, children }) => {
   const [activeSection, setActiveSection] = useState(items[0]);
 
-  const handleScroll = () => {
-    const scrollY = window.scrollY;
-
-    const sectionOffsets = items.reduce((offsets, section) => {
-      const element = document.getElementById(section);
-      if (element) {
-        const offsetTop = element.offsetTop - offset;
-        const offsetBottom = offsetTop + element.clientHeight;
-
-        offsets[section] = { offsetTop, offsetBottom };
-      }
-      return offsets;
-    }, {});
-
-    const newActiveSection = Object.keys(sectionOffsets).find(
-      (section) =>
-        scrollY >= sectionOffsets[section].offsetTop &&
-        scrollY < sectionOffsets[section].offsetBottom
-    );
-
-    if (newActiveSection !== activeSection) {
-      setActiveSection(newActiveSection);
-    }
-  };
-
   useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+
+      const sectionOffsets = items.reduce((offsets, section) => {
+        const element = document.getElementById(section);
+        if (element) {
+          const offsetTop = element.offsetTop - offset;
+          const offsetBottom = offsetTop + element.clientHeight;
+
+          offsets[section] = { offsetTop, offsetBottom };
+        }
+        return offsets;
+      }, {});
+
+      const newActiveSection = Object.keys(sectionOffsets).find(
+        (section) =>
+          scrollY >= sectionOffsets[section].offsetTop &&
+          scrollY < sectionOffsets[section].offsetBottom
+      );
+
+      if (newActiveSection !== activeSection) {
+        setActiveSection(newActiveSection);
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [activeSection]);
+  }, [activeSection, items, offset]);
 
   const scrollToSection = (section) => {
     const element = document.getElementById(section);
