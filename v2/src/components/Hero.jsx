@@ -129,6 +129,7 @@ export default function Hero({
                 position={"absolute"}
                 right={-71}
                 top={"10px"}
+                display={{ base: "none", md: "block" }}
               />
               <Text
                 fontSize={"lg"}
@@ -137,6 +138,7 @@ export default function Hero({
                 right={"-85px"}
                 top={"-15px"}
                 transform={"rotate(10deg)"}
+                display={{ base: "none", md: "block" }}
               >
                 Click me!
               </Text>
