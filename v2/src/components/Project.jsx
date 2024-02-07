@@ -23,6 +23,7 @@ import React, { useEffect, useState } from "react";
 import { CATEGORIES, COLOR_SCHEME } from "../utils";
 import { FaChevronRight, FaGithub, FaGlobeAmericas } from "react-icons/fa";
 import { SiGooglecolab } from "react-icons/si";
+import { useGATracking } from "../hooks/GAHook";
 
 function ProjectCard({ project }) {
   const [showDetails, setShowDetails] = useState(false);
@@ -141,6 +142,7 @@ function ProjectCard({ project }) {
 export default function Project({ projects, role }) {
   const [category, setCategory] = useState("soft");
   const [currProjects, setCurrProjects] = useState([]);
+  const ref = useGATracking("Project");
 
   useEffect(() => {
     setCategory(role);
@@ -154,7 +156,7 @@ export default function Project({ projects, role }) {
   }, [category, projects]);
 
   return (
-    <Container maxW={"3xl"} id="Project">
+    <Container maxW={"3xl"} id="Project" ref={ref} >
       <Stack
         as={Box}
         textAlign={"center"}

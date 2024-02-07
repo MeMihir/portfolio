@@ -22,10 +22,13 @@ import React from "react";
 import { FaChevronRight, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { GoLinkExternal } from "react-icons/go";
 import { COLOR_SCHEME } from "../utils";
+import { useGATracking } from "../hooks/GAHook";
 
 export default function Experience({ experience }) {
+  const ref = useGATracking("Experience");
+
   return (
-    <Container maxW={"3xl"} id="Experience">
+    <Container maxW={"3xl"} id="Experience" ref={ref} >
       <Stack
         as={Box}
         textAlign={"center"}

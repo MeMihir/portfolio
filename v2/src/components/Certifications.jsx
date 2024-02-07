@@ -24,6 +24,7 @@ import {
 import React from "react";
 import { COLOR_SCHEME } from "../utils";
 import { FaExternalLinkAlt, FaFilePdf } from "react-icons/fa";
+import { useGATracking } from "../hooks/GAHook";
 
 function CertificationCard({ certs }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -120,8 +121,10 @@ function CertificationCard({ certs }) {
 }
 
 export default function Certifications({ certifications }) {
+  const ref = useGATracking("Certification");
+
   return (
-    <Container maxW={"3xl"} id="Certification">
+    <Container maxW={"3xl"} id="Certification" ref={ref} >
       <Stack
         as={Box}
         textAlign={"center"}

@@ -25,6 +25,7 @@ import {
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { COLOR_SCHEME, ROLES } from "../utils";
+import { useGATracking } from "../hooks/GAHook";
 
 export default function Hero({
   firstName,
@@ -36,6 +37,8 @@ export default function Hero({
   socials,
   location,
 }) {
+  const ref = useGATracking("Hero");
+
   const Arrow = createIcon({
     displayName: "Arrow",
     viewBox: "0 0 72 24",
@@ -56,6 +59,7 @@ export default function Hero({
       height={"100vh"}
       marginLeft={[0, 0, "-5%", "-5%"]}
       p={5}
+      ref={ref}
     >
       <HStack
         justifyContent={["center", "center", "center", "space-around"]}
