@@ -13,3 +13,9 @@ export const CATEGORIES = {
   data: "Data Science",
   rest: "Miscellaneous",
 };
+
+export const GAEvent = (action, params) => {
+  if (typeof window.gtag === 'function') {
+    window.gtag("event", action, params);
+  }
+}

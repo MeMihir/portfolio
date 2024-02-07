@@ -24,6 +24,7 @@ import Hero from "./components/Hero";
 import Experience from "./components/Experience";
 import Project from "./components/Project";
 import Certifications from "./components/Certifications";
+import { useGATracking } from "./hooks/GAHook";
 
 const { ABOUT, EDUCATION, EXPERIENCE, PROJECTS, CERTIFICATION } =
   DATA;
@@ -69,6 +70,12 @@ const ProfileDisplay = () => {
 
   const [role, setRole] = useState("soft");
 
+  const aboutRef = useGATracking("About");
+  const educationRef = useGATracking("Education");
+  const skillsRef = useGATracking("Skills");
+  const hobbiesRef = useGATracking("Hobbies");  
+
+
   useEffect(() => {
     const role_path = window.location.pathname[1];
     const roles = ["", "data", "aiml", "soft"];
@@ -77,7 +84,7 @@ const ProfileDisplay = () => {
   }, []);
 
   const About = (
-    <Container maxW={"3xl"} id="About">
+    <Container maxW={"3xl"} id="About" ref={aboutRef} >
       <Stack
         as={Box}
         textAlign={"center"}
@@ -101,7 +108,7 @@ const ProfileDisplay = () => {
   );
 
   const Education = (
-    <Container maxW={"3xl"} id="Education">
+    <Container maxW={"3xl"} id="Education" ref={educationRef} >
       <Stack
         as={Box}
         textAlign={"center"}
@@ -267,7 +274,7 @@ const ProfileDisplay = () => {
   // );
 
   const Skills = (
-    <Container maxW={"3xl"} id="Skills">
+    <Container maxW={"3xl"} id="Skills" ref={skillsRef}>
       <Stack
         as={Box}
         textAlign={"center"}
@@ -354,7 +361,7 @@ const ProfileDisplay = () => {
   );
 
   const Hobbies = (
-    <Container maxW={"3xl"} id="Hobbies">
+    <Container maxW={"3xl"} id="Hobbies" ref={hobbiesRef} >
       <Stack
         as={Box}
         textAlign={"center"}
