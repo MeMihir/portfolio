@@ -1,4 +1,4 @@
-{
+ {
   "ABOUT": {
     "about": "Currently pursuing MS in Computer Science (Artificial Intelligence) at the University of Southern California with a GPA of 4.0. Have extensive expertise in Machine Learning, Artificial Intelligence, and Software Development. Have work experience as SDE (React), Researcher (NLP). Have built several projects using technologies like Computer Vision, NLP, Tensorflow, PyTorch, Reach, NodeJS, etc.",
     "socials": {
@@ -246,20 +246,25 @@
     },
     {
       "projectName": "Intelligent Pente Playing Agent",
-      "tags": ["aiml"],
+      "tags": ["aiml", "soft"],
       "tools": [
         "C++",
         "Artificial Intelligence",
         "Alpha-Beta Pruning",
-        "Algorithms"
+        "Algorithms",
+        "WebAssembly",
+        "ReactJS",
+        "CI/CD"
       ],
       "details": [
         "An Intelligent agent which plays the game Pente, a stratergy board game played on a 19x19 board. Built using C++ and utilizes Alpha-Beta Pruning",
         "Implemented leveraging alpha-beta pruning algorithm running at depth 5 with C++ capable of defeating Random, Minimax and Level 1 agent on pente.org.",
-        "Improved performance by reducing search space and through optimizations like Forward Pruning, Move Ordering, etc."
+        "Improved performance by reducing search space and through optimizations like Forward Pruning, Move Ordering, etc.",
+        "Created memory efficient agent and compiled to web assembly to produce near native performance on client-side and deployed as a user friendly ReactJS app using Netlify."
       ],
       "links": {
-        "github": "https://github.com/MeMihir/Pente"
+        "github": "https://github.com/MeMihir/Pente",
+        "website": "https://pente.mihirp.me/"
       }
     },
     {
