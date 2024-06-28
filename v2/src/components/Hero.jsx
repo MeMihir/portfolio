@@ -105,7 +105,7 @@ export default function Hero({
                 rounded={"full"}
                 variant={"outline"}
                 as={Link}
-                href={`resumes/MihirMangeshPavuskar${role}.pdf`}
+                href={`resumes/MihirMangeshPavuskar${role.toUpperCase()}.pdf`}
                 target="_blank"
               >
                 {"Open Resume"}

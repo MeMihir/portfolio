@@ -232,7 +232,7 @@
     },
     {
       "projectName": "Resume AI",
-      "tags": ["aiml", "soft"],
+      "tags": ["aiml", "sde"],
       "tools": ["ReactJS", "NextJS", "Firebase", "Vercel", "ChakraUI", "AI"],
       "details": [
         "An app that creates speacilized resumes and cover letters for job applications using AI based on the job description and user profile.",
@@ -246,7 +246,7 @@
     },
     {
       "projectName": "Intelligent Pente Playing Agent",
-      "tags": ["aiml", "soft"],
+      "tags": ["aiml", "sde"],
       "tools": [
         "C++",
         "Artificial Intelligence",
@@ -269,7 +269,7 @@
     },
     {
       "projectName": "Smart Checkout System",
-      "tags": ["soft"],
+      "tags": ["sde"],
       "tools": [
         "LSTM",
         "ReactJS",
@@ -306,7 +306,7 @@
     },
     {
       "projectName": "See Food",
-      "tags": ["aiml", "soft", "data"],
+      "tags": ["aiml", "sde", "data"],
       "tools": ["Tensorflow", "TFJS", "ReactJS", "OpenCV"],
       "details": [
         "Shazam for Food, can identify and classify up to 500 dishes using uploaded or live pictures",
