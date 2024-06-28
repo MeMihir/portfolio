@@ -68,7 +68,7 @@ const ProfileDisplay = () => {
     "Hobbies",
   ];
 
-  const [role, setRole] = useState("soft");
+  const [role, setRole] = useState("sde");
 
   const aboutRef = useGATracking("About");
   const educationRef = useGATracking("Education");
@@ -78,9 +78,9 @@ const ProfileDisplay = () => {
 
   useEffect(() => {
     const role_path = window.location.pathname[1];
-    const roles = ["", "data", "aiml", "soft"];
+    const roles = ["", "data", "aiml", "sde"];
     console.log(role_path, roles[role_path]);
-    setRole(roles[role_path] || "soft");
+    setRole(roles[role_path] || "sde");
   }, []);
 
   const About = (
