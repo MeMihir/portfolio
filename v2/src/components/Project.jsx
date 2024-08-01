@@ -140,7 +140,7 @@ function ProjectCard({ project }) {
 }
 
 export default function Project({ projects, role }) {
-  const [category, setCategory] = useState("soft");
+  const [category, setCategory] = useState("sde");
   const [currProjects, setCurrProjects] = useState([]);
   const ref = useGATracking("Project");
 
