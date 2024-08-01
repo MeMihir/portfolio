@@ -228,7 +228,9 @@
       ],
       "links": {
         "github": "https://github.com/MeMihir/ExpertVLM"
-      }
+      },
+      "fromDate": "Aug 2023",
+      "toDate": "Dec 2023"
     },
     {
       "projectName": "Resume AI",
@@ -243,7 +245,9 @@
       "links": {
         "github": "https://github.com/MeMihir/ResumeAI",
         "website": "https://resume-ai-neon.vercel.app/"
-      }
+      },
+      "fromDate": "May 2023",
+      "toDate": "Aug 2023"
     },
     {
       "projectName": "Intelligent Pente Playing Agent",
@@ -266,7 +270,9 @@
       "links": {
         "github": "https://github.com/MeMihir/Pente",
         "website": "https://pente.mihirp.me/"
-      }
+      },
+      "fromDate": "Jan 2023",
+      "toDate": "May 2023"
     },
     {
       "projectName": "Smart Checkout System",
@@ -288,7 +294,9 @@
       "links": {
         "github": "https://github.com/umangraval/Smart-Checkout",
         "website": "https://smartcheckout.mihirp.me/"
-      }
+      },
+      "fromDate": "Aug 2020",
+      "toDate": "Jun 2021"
     },
     {
       "projectName": "COVID Visualizer",
@@ -303,7 +311,9 @@
         "github": "https://github.com/MeMihir/nCoViD-Viz",
         "website": "https://ncovidviz.herokuapp.com/",
         "colab": "https://colab.research.google.com/drive/1TfThC2IGlJFI8acCfQdlX42L8uONm5lv?usp=sharing"
-      }
+      },
+      "fromDate": "Mar 2020",
+      "toDate": "Jun 2020"
     },
     {
       "projectName": "See Food",
@@ -317,7 +327,9 @@
         "github": "https://github.com/MeMihir/SeeFood",
         "website": "https://see-food.netlify.app/",
         "colab": "https://colab.research.google.com/drive/1KYUqaFV_MTbGydyuexiQ5aWbNvjxRQE1?usp=sharing"
-      }
+      },
+      "fromDate": "Oct 2020",
+      "toDate": "Dec 2020"
     },
     {
       "projectName": "FOL Reslover",
@@ -334,7 +346,9 @@
       ],
       "links": {
         "github": "https://github.com/MeMihir/FOL-Resolver"
-      }
+      },
+      "fromDate": "Jan 2023",
+      "toDate": "May 2023"
     },
     {
       "projectName": "SQL to NoSQL Database Converter",
@@ -345,7 +359,9 @@
       ],
       "links": {
         "github": "https://github.com/MeMihir/SQL_to_NoSQL"
-      }
+      },
+      "fromDate": "Aug 2019",
+      "toDate": "Jan 2020"
     },
     {
       "projectName": "Master Gesture",
