@@ -204,7 +204,7 @@
   ],
   "PROJECTS": [
     {
-      "projectName": "MorphVLM: Fine-tuning Large Multimodal Language Models on niche Domains",
+      "projectName": "ExpertVLM: Fine-tuning Large Multimodal Language Models on niche Domains",
       "tags": ["aiml", "data"],
       "tools": [
         "Natural Language Processing (NLP)",
@@ -227,7 +227,7 @@
         "Executed fine-tuning of Flamingo model through LoRA method on A-OKVQA and Pubmed datasets to attain 45.5% accuracy on VQAv2 dataset with minimal resource consumption, 60% smaller model size and 3 times faster convergence."
       ],
       "links": {
-        "github": "https://github.com/MeMihir/Pente"
+        "github": "https://github.com/MeMihir/ExpertVLM"
       }
     },
     {
@@ -241,7 +241,8 @@
         "Attained scalability, security, and reliability through Firebase for data storage and authentication and git CI/CD pipelines."
       ],
       "links": {
-        "github": "https://github.com/MeMihir/Pente"
+        "github": "https://github.com/MeMihir/ResumeAI",
+        "website": "https://resume-ai-neon.vercel.app/"
       }
     },
     {
