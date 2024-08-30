@@ -104,6 +104,30 @@
     }
   ],
   "EXPERIENCE": [
+   {
+      "companyName": "Tikr Media",
+      "role": "AI Software Developer Intern",
+      "location": "Los Angeles, CA, USA",
+      "fromDate": "Aug 2024",
+      "toDate": "present",
+      "tools": [
+        "Go",
+        "RestAPI",
+        "AWS",
+        "PyTorch",
+        "Agile"
+      ],
+      "details": [
+        "Develop machine learning models tailored for marketing automation and user acquisition, leading to increased campaign effectiveness and optimized customer targeting.",
+        "Establish robust machine learning pipelines that handle large-scale data processing, ensuring efficient model training, deployment, and monitoring for various operational processes.",
+        "Lead the design and development of backend API and authentication systems that support Marketing and User Acquisition models"
+      ],
+      "certificate": "",
+      "links": {
+        "website": "https://tikr.is/",
+        "linkedin": "https://www.linkedin.com/company/tikr-media/"
+      }
+    },
     {
       "companyName": "Murf AI",
       "role": "Software Developer Frontend",
@@ -204,7 +228,58 @@
   ],
   "PROJECTS": [
     {
-      "projectName": "ExpertVLM: Fine-tuning Large Multimodal Language Models on niche Domains",
+      "projectName": "Dunes: Quantitative Prediction of Influential Individuals on Community Dynamics through Advanced Language Models",
+      "tags": ["aiml", "data"],
+      "tools": [
+        "Natural Language Processing (NLP)",
+        "Large Language Models",
+        "Transformers",
+        "Deep Learning",
+        "Machine Learning",
+        "Artificial Intelligence (AI)",
+        "Web Scraping",
+        "Python",
+        "PyTorch",
+        "BERT",
+        "GPT"
+      ],
+      "details": [
+        "Developed a deep learning framework utilizing advanced NLP techniques to predict social media engagement metrics (likes, comments, retweets) based on multimodal data from Twitter and Reddit",
+        "Implemented and compared various model architectures, including Transformers, MLP, and LSTM, for optimizing engagement prediction, with a focus on Elon Musk's Twitter activity as a case study.",
+        "Enhanced model performance through sophisticated data preprocessing, including semantic embeddings, sentiment analysis, and sector classification, while also employing advanced scaling techniques to mitigate data skew."
+      ],
+      "links": {
+        "github": "https://github.com/nikitakodkany/csci566s-24"
+      },
+      "fromDate": "Jan 2024",
+      "toDate": "May 2024"
+    },
+    {
+      "projectName": "Mesh2Splat: Deep Learning method to convert Meshes to Gaussian Splats",
+      "tags": ["aiml", "data"],
+      "tools": [
+        "3D Graphics",
+        "Gaussian Splatting",
+        "3D Imaging",
+        "Deep Learning",
+        "Machine Learning",
+        "Artificial Intelligence (AI)",
+        "Python",
+        "PyTorch"
+      ],
+      "details": [
+        "Headed development of an end-to-end pipeline to convert 3D object representations such as point clouds and meshes to Gaussian Splats for efficient rendering.",
+        "Leveraged pre-existing PointNet++ architecture reducing training time and achieved 93% accuracy on the splats generated.",
+        "Introduced Objaverse-Splats, the first dataset of graphic shapes paired with high-quality Gaussian splats representation created utilizing Dream-Gaussian model."
+      ],
+      "links": {
+        "github": "https://github.com/MeMihir/ML-Mesh2Splat"
+      },
+      "fromDate": "Aug 2023",
+      "toDate": "Dec 2023"
+    },
+    {
+      "projectName": "ExpertVLM: Fine-tuning Large Multimodal Language Models on Niche Domains",
       "tags": ["aiml", "data"],
       "tools": [
         "Natural Language Processing (NLP)",
