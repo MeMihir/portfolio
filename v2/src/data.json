@@ -104,6 +104,30 @@
     }
   ],
   "EXPERIENCE": [
+   {
+      "companyName": "Tikr Media",
+      "role": "AI Software Developer Intern",
+      "location": "Los Angeles, CA, USA",
+      "fromDate": "Aug 2024",
+      "toDate": "present",
+      "tools": [
+        "Go",
+        "RestAPI",
+        "AWS",
+        "PyTorch",
+        "Agile",
+      ],
+      "details": [
+        "Develop machine learning models tailored for marketing automation and user acquisition, leading to increased campaign effectiveness and optimized customer targeting.",
+        "Establish robust machine learning pipelines that handle large-scale data processing, ensuring efficient model training, deployment, and monitoring for various operational processes.",
+        "Lead the design and development of backend API and authentication systems that support Marketing and User Acquisition models",
+      ],
+      "certificate": "",
+      "links": {
+        "website": "https://tikr.is/",
+        "linkedin": "https://www.linkedin.com/company/tikr-media/",
+      }
+    },
     {
       "companyName": "Murf AI",
       "role": "Software Developer Frontend",
