@@ -181,7 +181,7 @@
       ],
       "details": [
         "Architected end-to-end financial question-answering system using ensemble of BERT-based models (TaPaS, ALBERT, HybridR), achieving state-of-the-art accuracy of 72% on FinQA benchmark dataset.",
-        "Engineered custom data preprocessing methodology integrating structured and unstructured financial data processing over 1,000 financial documents with 99.7% accuracy",
+        "Engineered custom data preprocessing methodology integrating structured and unstructured financial data processing over 1,000 financial documents with 99.7% accuracy"
       ],
       "certificate": "",
       "links": {
@@ -232,6 +232,32 @@
     }
   ],
   "PROJECTS": [
+    {
+      "projectName": "CALM-NAV: Confidence-Adaptive Learning and Monitoring for Vision-Language",
+      "tags": ["aiml", "data"],
+      "tools": [
+        "Visual Language Navigation (VLN)",
+        "3D Computer Vision",
+        "Human-in-the-Loop (HITL)",
+        "Natural Language Processing (NLP)",
+        "Large Language Models",
+        "Transformers",
+        "Deep Learning",
+        "Machine Learning",
+        "Artificial Intelligence (AI)",
+        "Python",
+        "PyTorch",
+      ],
+      "details": [
+        "Led development of Adaptive Human-in-the-Loop Vision-Language Navigation system integrating confidence estimation with VLN-BERT, achieving 62.2% success rate on R2R validation seen and 52.8% on unseen environments.",
+        "Developed confidence calibration pipeline using Monte Carlo Dropout and entropy measures, reducing Expected Calibration Error from 12% to 8% while maintaining real-time performance."
+      ],
+      "links": {
+        "github": "https://github.com/MeMihir/CALM-VLN"
+      },
+      "fromDate": "Aug 2024",
+      "toDate": "Dec 2024"
+    },
     {
       "projectName": "Dunes: Quantitative Prediction of Influential Individuals on Community Dynamics through Advanced Language Models",
       "tags": ["aiml", "data"],
