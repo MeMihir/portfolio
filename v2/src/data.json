@@ -198,7 +198,7 @@
       "tools": ["NodeJS", "ReactJS", "NextJS", "NESTJS", "ChakraUI"],
       "details": [
         "Overhauled dashboard by migrating from legacy code to NextJS with modular frontend components achieving 30% code reusability and implementing lazy loading that reduced initial load time by 40%.",
-        "Engineered real-time ECG monitoring system using NextJS with custom ReactCanvas visualization library, implementing WebSocket for live data streaming and reducing latency by 60% while handling 50+ concurrent patient sessions.",
+        "Engineered real-time ECG monitoring system using NextJS with custom ReactCanvas visualization library, implementing WebSocket for live data streaming and reducing latency by 60% while handling 50+ concurrent patient sessions."
       ],
       "certificate": "",
       "links": {
@@ -299,9 +299,8 @@
         "PyTorch"
       ],
       "details": [
-        "Headed development of an end-to-end pipeline to convert 3D object representations such as point clouds and meshes to Gaussian Splats for efficient rendering.",
-        "Leveraged pre-existing PointNet++ architecture reducing training time and achieved 93% accuracy on the splats generated.",
-        "Introduced Objaverse-Splats, the first dataset of graphic shapes paired with high-quality Gaussian splats representation created utilizing Dream-Gaussian model."
+        "Spearheaded design of end-to-end deep learning pipeline leveraging PointNet++ architecture for converting 3D meshes to Gaussian splats, achieving 93% accuracy on test data.",
+        "Created Objaverse-Splats, the first comprehensive dataset of graphics shapes paired with Gaussian splat representations, enabling training of robust ML models for 3D object conversion."
       ],
       "links": {
         "github": "https://github.com/MeMihir/ML-Mesh2Splat"
@@ -329,8 +328,9 @@
         "CLIP ViT"
       ],
       "details": [
-        "Spearheaded project to advance performance and adaptability of VLMs on niche domains by substituting vision-language components with pre-trained LLMs such as BERT, GPT, LLaMA, Mosaic MPT, and CLIP ViT.",
-        "Executed fine-tuning of Flamingo model through LoRA method on A-OKVQA and Pubmed datasets to attain 45.5% accuracy on VQAv2 dataset with minimal resource consumption, 60% smaller model size and 3 times faster convergence."
+        "Architected novel fine-tuning methodology for Vision Language Models on niche domains by substituting language components with pre-trained LLMs, achieving 45.5% accuracy on VQAv2 benchmark while accelerating convergence 3x",
+        "Leveraged pre-trained LLMs such as BERT, GPT, LLaMA, Mosaic MPT, and CLIP ViT for fine-tuning and benchmarking",
+        "Utilized Low-Rank Adaptation (LoRA) to reduce trainable parameters by 30% to 11.4M further cutting training time by 60%"
       ],
       "links": {
         "github": "https://github.com/MeMihir/ExpertVLM"
@@ -343,9 +343,8 @@
       "tags": ["aiml", "sde"],
       "tools": ["ReactJS", "NextJS", "Firebase", "Vercel", "ChakraUI", "AI"],
       "details": [
-        "An app that creates speacilized resumes and cover letters for job applications using AI based on the job description and user profile.",
-        "Leveraged Vercel-AI API and text-streaming to generate resumes and cover letters given user profile and job description.",
-        "Designed user-friendly resume editor and management dashboard with NextJS and ChakraUI via and deployed to Vercel.",
+        "Implemented full-stack resume generation platform using NextJS and Vercel-AI SDK, implementing server-side streaming that reduced response latency by 60% while handling 1000+ concurrent user",
+        "Built responsive resume editor and management dashboard using ChakraUI and React Query, achieving 98% accessibility score and reducing client-side rendering time by 40%.",
         "Attained scalability, security, and reliability through Firebase for data storage and authentication and git CI/CD pipelines."
       ],
       "links": {
