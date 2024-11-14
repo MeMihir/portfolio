@@ -246,7 +246,7 @@
         "Machine Learning",
         "Artificial Intelligence (AI)",
         "Python",
-        "PyTorch",
+        "PyTorch"
       ],
       "details": [
         "Led development of Adaptive Human-in-the-Loop Vision-Language Navigation system integrating confidence estimation with VLN-BERT, achieving 62.2% success rate on R2R validation seen and 52.8% on unseen environments.",
