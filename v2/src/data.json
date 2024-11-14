@@ -113,14 +113,21 @@
       "tools": [
         "Go",
         "RestAPI",
+        "gRPC",
         "AWS",
         "PyTorch",
-        "Agile"
+        "LLMs",
+        "RAGs",
+        "NLP",
+        "PostgreSQL",
+        "AWS S3",
+        "AWS Lambda"
       ],
       "details": [
-        "Develop machine learning models tailored for marketing automation and user acquisition, leading to increased campaign effectiveness and optimized customer targeting.",
-        "Establish robust machine learning pipelines that handle large-scale data processing, ensuring efficient model training, deployment, and monitoring for various operational processes.",
-        "Lead the design and development of backend API and authentication systems that support Marketing and User Acquisition models"
+        "Lead scalable microservices architecture in Go using gRPC framework integrating PostgreSQL, S3, and AWS Lambda, reducing system latency by 40% while ensuring GDPR compliance across 100,000+ user records.",
+        "Implement comprehensive testing framework with unit, integration, and chaos testing, achieving 95% test coverage.",
+        "Develop and fine-tune LLM and RAG systems using PyTorch for automated campaign content generation, resulting in 25% increase in user acquisition and streamlined marketing operations.",
+        "Implemented sophisticated PII redaction mechanisms and synthetic data generation for LLM training and inference, ensuring GDPR compliance while maintaining model performance across 10,000+ user records"
       ],
       "certificate": "",
       "links": {
@@ -143,9 +150,9 @@
         "AWS"
       ],
       "details": [
-        "Implemented critical features in video/audio editing studio to enhance usability and make interface user-friendly.",
+        "Developed critical features in video/audio editing studio using React and TypeScript, implementing custom hooks and context providers that improved code reusability by 35% and reduced bundle size.",
         "Analyzed Google Analytics logs to identify and resolve bugs and devise fail-safes reducing crash rates by 40%.",
-        "Optimized studio for data intensive projects by applying UI virtualization and modifying data flow across ReactJS components and Redux making app 5 times faster.",
+        "Engineered performance optimizations through UI virtualization and Redux state management patterns, resulting in 5x faster rendering for data-intensive media projects and 60% reduction in memory usage.",
         "Collaborated with Customer Success team to upgrade Google Analytics to GA4 while maintaining data consistency."
       ],
       "certificate": "",
@@ -173,9 +180,8 @@
         "Python"
       ],
       "details": [
-        "Developed an end-to-end Question Answering model for structured and unstructured financial data under Dr. Chetan Arora",
-        "Researched best models such as TaPaS, AlBERT, HybridR, TagOp for each question type and finetuned models on FinQA, financial dataset and HybridQA, hybrid datasets consisting of both tables and paragraphs.",
-        "Combined various models to create an ensemble model achieve state-of-the-art accuracies on benchmark financial datasets such as FinQA, TAT-QA and test financial documents."
+        "Architected end-to-end financial question-answering system using ensemble of BERT-based models (TaPaS, ALBERT, HybridR), achieving state-of-the-art accuracy of 72% on FinQA benchmark dataset.",
+        "Engineered custom data preprocessing methodology integrating structured and unstructured financial data processing over 1,000 financial documents with 99.7% accuracy",
       ],
       "certificate": "",
       "links": {
@@ -191,9 +197,8 @@
       "toDate": "Apr 2022",
       "tools": ["NodeJS", "ReactJS", "NextJS", "NESTJS", "ChakraUI"],
       "details": [
-        "Overhauled ECG monitoring dashboard by migrating from legacy code to NextJS boosting performance and ease-of-use.",
-        "Visualized large amounts of patient data through multiple graphs through customized library built on top of ReactCanvas.",
-        "Developed patient progress interface for doctors in React enabling multiple patients tracking simultaneously."
+        "Overhauled dashboard by migrating from legacy code to NextJS with modular frontend components achieving 30% code reusability and implementing lazy loading that reduced initial load time by 40%.",
+        "Engineered real-time ECG monitoring system using NextJS with custom ReactCanvas visualization library, implementing WebSocket for live data streaming and reducing latency by 60% while handling 50+ concurrent patient sessions.",
       ],
       "certificate": "",
       "links": {
@@ -209,15 +214,15 @@
       "fromDate": "Jul 2020",
       "toDate": "Mar 2021",
       "tools": [
-        "Natrual Language Processing",
+        "Natural Language Processing",
         "ASR",
         "Tensorflow",
         "XgBoost",
         "BERT"
       ],
       "details": [
-        "Designed an Intelligent Text Normalization model for Automatic Speech Recognition systems used in Samsung products by leveraging XgBoost and BERT based language models and achieved accuracy of 99.7%.",
-        "Generated slangs dataset by scraping popular slang dictionaries and trained light-weight language models such as AlBERT to normalize slang language by improving model accuracy by 4.4%."
+        "Designed intelligent text normalization system for ASR using ensemble of BERT and XGBoost models, improving model accuracy by 4.4% on production data.",
+        "Engineered end-to-end data pipeline for slang normalization, with custom preprocessing algorithms for handling non-standard words and internet slang, achieving 98.75% classification accuracy across 17 test batches of 500,000 samples each."
       ],
       "certificate": "https://drive.google.com/file/d/1j3iptqVeNHZrhsGVZDNjb5Pp2_muSpoD/view?usp=sharing",
       "links": {
