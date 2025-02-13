@@ -153,7 +153,7 @@ export default function Hero({
                   colorScheme={color}
                   variant="ghost"
                 >
-                  {email && (
+{/*                   {email && (
                     <IconButton
                       as={Link}
                       href={`mailto:${email}`}
@@ -168,7 +168,7 @@ export default function Hero({
                       aria-label={"Phone"}
                       icon={<FaPhone fontSize="20px" />}
                     />
-                  )}
+                  )} */}
                   {socials.linkedin && (
                     <IconButton
                       as={Link}
