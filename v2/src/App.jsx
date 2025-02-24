@@ -9,11 +9,16 @@ import {
   Container,
   DarkMode,
   Divider,
+  FormControl,
+  FormLabel,
   HStack,
   Heading,
   Image,
+  Input,
   Stack,
   Text,
+  Textarea,
+  useToast,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { COLOR_SCHEME } from "./utils";
@@ -35,9 +40,7 @@ const ProfileDisplay = () => {
 
   const firstName = "Mihir";
   const lastName = "Pavuskar";
-  const email = "pavuskar@usc.edu";
-  const phone = "+1 (213) 691 9326";
-  const location = "Los Angeles, CA";
+  const location = "Seattle, WA";
   const { socials, about, programmingLanguages, tools, languages, hobbies } =
     ABOUT;
   const education = EDUCATION;
@@ -66,6 +69,7 @@ const ProfileDisplay = () => {
     "Certification",
     "Skills",
     "Hobbies",
+    "Contact",
   ];
 
   const [role, setRole] = useState("sde");
@@ -74,8 +78,24 @@ const ProfileDisplay = () => {
   const educationRef = useGATracking("Education");
   const skillsRef = useGATracking("Skills");
   const hobbiesRef = useGATracking("Hobbies");  
+  const contactRef = useGATracking("Contact");
 
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const toast = useToast();
 
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+  
   useEffect(() => {
     const role_path = window.location.pathname[1];
     const roles = ["", "data", "aiml", "sde"];
@@ -396,6 +416,105 @@ const ProfileDisplay = () => {
     </Container>
   );
 
+  const Contact = (
+    <Container maxW={"3xl"} id="Contact" ref={contactRef}>
+      <Stack
+        as={Box}
+        textAlign={"center"}
+        spacing={{ base: 8, md: 14 }}
+        pb={{ base: 20, md: 36 }}
+      >
+        <Stack align="center" direction="row" px={4}>
+          <HStack mx={4}>
+            <Text color={`${color}.400`} fontWeight={800}>
+              09
+            </Text>
+            <Text fontWeight={800}>Contact</Text>
+          </HStack>
+          <Divider orientation="horizontal" />
+        </Stack>
+        <Box px={4}>
+          <form
+            onSubmit={async (e) => {
+              e.preventDefault();
+              setIsSubmitting(true);
+
+              try {
+                const res = await fetch(
+                  "https://script.google.com/macros/s/AKfycbyLJ9X5dFHDaRG7zfaUOnMEA6-jotAKB6RRpxgzaYh5EkNkYtYXrcVwMPNcg7V90QLajg/exec",
+                  {
+                    method: "POST",
+                    body: JSON.stringify(formData),
+                  }
+                );
+
+                if (!res.ok) {
+                  throw new Error("Failed to send message");
+                }
+
+                toast({
+                  title: "Message sent successfully",
+                });
+                setFormData({
+                  name: "",
+                  email: "",
+                  message: "",
+                });
+              } catch (error) {
+                console.error("Failed to send message:", error);
+              } finally {
+                setIsSubmitting(false);
+              }
+            }}
+          >
+            <Stack spacing={4}>
+              <FormControl isRequired>
+                <FormLabel>Name</FormLabel>
+                <Input 
+                type="text" 
+                placeholder="Your name" 
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                />
+              </FormControl>
+              <FormControl isRequired>
+                <FormLabel>Email</FormLabel>
+                <Input 
+                type="email" 
+                placeholder="your.email@example.com" 
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                />
+              </FormControl>
+              <FormControl isRequired>
+                <FormLabel>Message</FormLabel>
+                <Textarea 
+                placeholder="Your message" 
+                rows={6} 
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                />
+              </FormControl>
+              <Button
+                type="submit"
+                colorScheme={color}
+                size="lg"
+                fontSize="md"
+                isLoading={isSubmitting}
+              >
+                Send Message
+              </Button>
+            </Stack>
+          </form>
+        </Box>
+      </Stack>
+    </Container>
+  );
+  
+
   // const Summary = (
   //   <Container maxW={"3xl"} id="Summary">
   //     <Stack
@@ -429,9 +548,7 @@ const ProfileDisplay = () => {
             lastName={lastName}
             role={role}
             color={COLOR_SCHEME}
-            email={email}
             socials={socials}
-            phone={phone}
             location={location}
           />
           {About}
@@ -443,6 +560,7 @@ const ProfileDisplay = () => {
           {Skills}
           {Hobbies}
           {/* {Summary} */}
+          {Contact}
         </ScrollSpy>
       </DarkMode>
     </>
