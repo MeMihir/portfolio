@@ -441,7 +441,7 @@ const ProfileDisplay = () => {
 
               try {
                 const res = await fetch(
-                  "https://script.google.com/macros/s/AKfycbyLJ9X5dFHDaRG7zfaUOnMEA6-jotAKB6RRpxgzaYh5EkNkYtYXrcVwMPNcg7V90QLajg/exec",
+                  process.env.REACT_APP_EMAILJS_SERVICE_ID,
                   {
                     method: "POST",
                     body: JSON.stringify(formData),
